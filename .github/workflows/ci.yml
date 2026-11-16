@@ -48,7 +48,8 @@ jobs:
           echo "GODOT_BIN=$BIN" >> "$GITHUB_ENV"
 
       - name: Import Godot project resources
-        run: "$GODOT_BIN" --headless --path ./game --import
+        run: |
+          "$GODOT_BIN" --headless --path ./game --import
 
       - name: Run stage proof tests (--self-test)
         run: |
