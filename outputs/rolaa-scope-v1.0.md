@@ -467,7 +467,7 @@ Each phase = 1–3 sprints of 2 weeks. Durations are indicative; we re-plan afte
 | Phase | Goal | Key deliverables | Exit criteria |
 |---|---|---|---|
 | **P0 – Foundation refactor** *(Complete 16 Nov 2026)* | Architecture ready to scale | `CharacterDef`/`MoveData` resources, generic `FighterView`, both rigged fighters promoted to main scene (`stage_proof.tscn`), git + CI running existing tests | Khan vs Asim rigged fight passes automated checks (48/48 `--khan-stage-test`, 17/17 `--self-test`, 29/29 `--combat-test`) |
-| **P1 – Tech spikes** | Kill the big unknowns | Renderer spike (Compat vs Forward+), character decimation/bake to ~60k, 2-fighter perf benchmark, input-latency measurement | Renderer + tri budget decided via ADR, 60 fps confirmed |
+| **P1 – Tech spikes** *(Complete 16 Nov 2026)* | Kill the big unknowns | Renderer spike (`gl_compatibility` vs `forward_plus`) + Low/Med/High presets, Blender decimation (`293k→66k` Khan, `285k→62k` Asim), 2-fighter `--perf-bench`, input-latency & determinism harness (`--determinism-test`) | ADR (`docs/adr/0001-renderer-and-lod-budget.md`) locks `gl_compatibility` (87.0 fps avg Med / 298.9 fps Low on Iris Xe) + ~60k tri LOD0; 1-tick input latency & 180-tick replay determinism pass |
 | **P2 – Combat core v2** | Tekken-like system | 4-button input, buffer + chords + motions, hit levels, crouch/low guard, throws, counter-hit, strings, launcher/juggle with scaling, knockdown/get-up, walls, meter, training mode + debug overlay, frame-data editor tool | 10-move kit per character playable; unit tests for buffer/frame data |
 | **P3 – Animation pass** | It looks like a fighter | Retarget crouch/reaction clips, phase sync for all moves, hit reaction matrix, foot IK, spring-bone cloth, video-mocap signature moves | Every state has a real animation; zero procedural tilt |
 | **P4 – Stage 1 final** | Mall Road at mockup quality | Modular kit, baked lighting, crowd, ambient life, wall events, grading | Side-by-side with mockup approved by you; perf in budget |
@@ -475,7 +475,7 @@ Each phase = 1–3 sprints of 2 weeks. Durations are indicative; we re-plan afte
 | **P6 – AI, polish, ship R1** | Resume-ready | CPU AI ×3 difficulties, balance pass, options/remap, soak test, Windows build, trailer, README, devlog | R1 checklist §4 complete |
 | **P7+** | R2 content | Arcade/story, stages 2–3, fighters 3–4, replays | Per-feature |
 
-**P0 complete (16 Nov 2026); next sprint (P1):** renderer spike (Compatibility vs Forward+), character high→low decimation (~40k–70k tris), 2-fighter 60 fps perf benchmark, and input-latency measurement.
+**P0 & P1 complete (16 Nov 2026); next sprint (P2):** Combat core v2 (4-limb Tekken inputs, 60-tick `InputBuffer` + chords + motions, high/mid/low hit levels, crouch guard, sidestep-lite, throws, counter-hits, strings, launchers/juggles, Josh meter, training mode & debug overlay).
 
 ### Definition of Done (every feature)
 Works with keyboard + gamepad · covered by an automated test where feasible · no frame-budget regression · documented in GDD decision log · no placeholder left unless ticketed.

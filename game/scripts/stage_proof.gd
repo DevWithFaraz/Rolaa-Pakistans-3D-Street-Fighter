@@ -7,6 +7,9 @@ const CharacterDefScript = preload("res://scripts/character_def.gd")
 const Hud = preload("res://scripts/proof_hud.gd")
 const Feedback = preload("res://scripts/combat_feedback.gd")
 const CombatValidation = preload("res://scripts/combat_validation.gd")
+const GraphicsPresetsScript = preload("res://scripts/graphics_presets.gd")
+const PerfBenchmarkScript = preload("res://scripts/perf_benchmark.gd")
+const DeterminismCheckScript = preload("res://scripts/determinism_check.gd")
 const CAMERA_LIMIT = 9.0
 const MAX_SEPARATION = 10.0
 const MIN_SEPARATION = 1.15
@@ -15,6 +18,8 @@ const ROUNDS_TO_WIN = 2
 var fighters: Array[CharacterBody3D] = []
 var camera: Camera3D
 var sun: DirectionalLight3D
+var world_env: WorldEnvironment
+var quality_preset := "medium"
 var hud: Control
 var paused := false
 var demo := false
@@ -36,11 +41,12 @@ var hitstop_ticks := 0
 var testing := false
 var pending_attacks: Array[String] = ["", ""]
 var pending_ticks: Array[int] = [0, 0]
+var _prev_actions: Dictionary = {}
 var feedback: Node3D
 
 func _ready() -> void:
 	var user_args := OS.get_cmdline_user_args()
-	testing = "--self-test" in user_args or "--combat-test" in user_args or "--khan-stage-test" in user_args
+	testing = "--self-test" in user_args or "--combat-test" in user_args or "--khan-stage-test" in user_args or "--perf-bench" in user_args or "--determinism-test" in user_args
 	var use_proxies := "--proxy-fighters" in user_args
 	_bind_inputs()
 	_make_environment()
@@ -81,14 +87,22 @@ func _ready() -> void:
 	feedback = Feedback.new()
 	add_child(feedback)
 	reset()
-	for argument in OS.get_cmdline_user_args():
+	var preset_arg := "medium"
+	for argument in user_args:
 		if argument.begins_with("--capture-dir="):
 			capture_dir = argument.trim_prefix("--capture-dir=")
-	if "--self-test" in OS.get_cmdline_user_args():
+		elif argument.begins_with("--preset="):
+			preset_arg = argument.trim_prefix("--preset=")
+	GraphicsPresetsScript.apply(self, preset_arg)
+	if "--self-test" in user_args:
 		call_deferred("_validate")
-	elif "--combat-test" in OS.get_cmdline_user_args():
+	elif "--combat-test" in user_args:
 		call_deferred("_validate_combat")
-	elif "--tour" in OS.get_cmdline_user_args():
+	elif "--perf-bench" in user_args:
+		call_deferred("_run_perf_benchmark")
+	elif "--determinism-test" in user_args:
+		call_deferred("_run_determinism_test")
+	elif "--tour" in user_args:
 		demo = true
 
 func _bind_inputs() -> void:
@@ -123,7 +137,7 @@ func _bind_inputs() -> void:
 			InputMap.action_add_event("p%d_%s" % [player + 1, suffix], combat_button)
 
 func _make_environment() -> void:
-	var world = WorldEnvironment.new()
+	world_env = WorldEnvironment.new()
 	var env = Environment.new()
 	var sky = Sky.new()
 	var sky_material = ProceduralSkyMaterial.new()
@@ -138,8 +152,8 @@ func _make_environment() -> void:
 	env.ambient_light_color = Color("d5d8c5")
 	env.ambient_light_energy = 0.65
 	env.tonemap_mode = Environment.TONE_MAPPER_LINEAR
-	world.environment = env
-	add_child(world)
+	world_env.environment = env
+	add_child(world_env)
 	sun = DirectionalLight3D.new()
 	sun.name = "AfternoonSun"
 	sun.rotation_degrees = Vector3(-48, -32, 0)
@@ -167,10 +181,13 @@ func _start_round() -> void:
 	hitstop_ticks = 0
 	pending_attacks = ["", ""]
 	pending_ticks = [0, 0]
+	_prev_actions.clear()
 	feedback.clear()
 	for i in range(2):
 		fighters[i].reset_combat()
 		fighters[i].position = Vector3(-3.0 if i == 0 else 3.0, 0.025, 0)
+		fighters[i].velocity = Vector3(0.0, -Fighter.GRAVITY / 60.0, 0.0)
+		fighters[i].move_and_slide()
 		fighters[i].velocity = Vector3.ZERO
 		fighters[i].facing = 1.0 if i == 0 else -1.0
 	camera.position.x = 0.0
@@ -229,15 +246,27 @@ func _unhandled_key_input(event: InputEvent) -> void:
 			hud.show_debug = not hud.show_debug
 		KEY_F4:
 			sun.shadow_enabled = not sun.shadow_enabled
+		KEY_F5:
+			GraphicsPresetsScript.apply(self, GraphicsPresetsScript.next_preset(quality_preset))
+
+func _poll_just_pressed(actions: Array[String]) -> Dictionary:
+	var just := {}
+	for action in actions:
+		var now_down := Input.is_action_pressed(action)
+		just[action] = now_down and not bool(_prev_actions.get(action, false))
+		_prev_actions[action] = now_down
+	return just
 
 func _physics_process(delta: float) -> void:
 	if paused:
 		return
+	var just_pressed := _poll_just_pressed(["p1_punch", "p1_kick", "p2_punch", "p2_kick", "p1_jump", "p2_jump"])
 	# Save short taps during hitstop; expire the buffer on simulation ticks.
 	if round_state == "fight" and not demo:
 		for i in range(2):
 			for kind in ["punch", "kick"]:
-				if Input.is_action_just_pressed("p%d_%s" % [i + 1, kind]):
+				var action := "p%d_%s" % [i + 1, kind]
+				if bool(just_pressed.get(action, false)):
 					pending_attacks[i] = kind
 					pending_ticks[i] = 5
 	if hitstop_ticks > 0:
@@ -247,7 +276,7 @@ func _physics_process(delta: float) -> void:
 	event_ticks = maxi(0, event_ticks - 1)
 	demo_time += delta
 	var axes = [Input.get_axis("p1_left", "p1_right"), Input.get_axis("p2_left", "p2_right")]
-	var jumps = [Input.is_action_just_pressed("p1_jump"), Input.is_action_just_pressed("p2_jump")]
+	var jumps = [bool(just_pressed.get("p1_jump", false)), bool(just_pressed.get("p2_jump", false))]
 	if demo:
 		var middle = sin(demo_time * 0.38) * 10.5
 		for i in range(2):
@@ -435,4 +464,57 @@ func _validate() -> void:
 
 func _validate_combat() -> void:
 	var suite = CombatValidation.new()
+	await suite.run(self)
+
+func snapshot_match() -> Dictionary:
+	return {
+		"round_state": round_state,
+		"round_ticks": round_ticks,
+		"round_time_ticks": round_time_ticks,
+		"round_number": round_number,
+		"wins": wins.duplicate(),
+		"result_text": result_text,
+		"dummy_guard": dummy_guard,
+		"event_text": event_text,
+		"event_ticks": event_ticks,
+		"hitstop_ticks": hitstop_ticks,
+		"pending_attacks": pending_attacks.duplicate(),
+		"pending_ticks": pending_ticks.duplicate(),
+		"prev_actions": _prev_actions.duplicate(),
+		"camera_x": camera.position.x,
+		"fighters": [fighters[0].snapshot_state(), fighters[1].snapshot_state()],
+	}
+
+func restore_match(snap: Dictionary) -> void:
+	round_state = String(snap.round_state)
+	round_ticks = int(snap.round_ticks)
+	round_time_ticks = int(snap.round_time_ticks)
+	round_number = int(snap.round_number)
+	wins = [int(snap.wins[0]), int(snap.wins[1])]
+	result_text = String(snap.result_text)
+	dummy_guard = bool(snap.dummy_guard)
+	event_text = String(snap.event_text)
+	event_ticks = int(snap.event_ticks)
+	hitstop_ticks = int(snap.hitstop_ticks)
+	pending_attacks = [String(snap.pending_attacks[0]), String(snap.pending_attacks[1])]
+	pending_ticks = [int(snap.pending_ticks[0]), int(snap.pending_ticks[1])]
+	_prev_actions = snap.get("prev_actions", {}).duplicate()
+	camera.position.x = float(snap.camera_x)
+	feedback.clear()
+	for i in range(2):
+		fighters[i].restore_state(snap.fighters[i])
+
+func _run_perf_benchmark() -> void:
+	var out_path := capture_dir.path_join("perf-bench.json") if not capture_dir.is_empty() else ""
+	var cap_path := ""
+	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("--bench-out="):
+			out_path = arg.trim_prefix("--bench-out=")
+		elif arg.begins_with("--bench-capture="):
+			cap_path = arg.trim_prefix("--bench-capture=")
+	var bench = PerfBenchmarkScript.new()
+	await bench.run(self, out_path, cap_path)
+
+func _run_determinism_test() -> void:
+	var suite = DeterminismCheckScript.new()
 	await suite.run(self)

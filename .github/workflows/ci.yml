@@ -66,6 +66,11 @@ jobs:
           mkdir -p "$RUNNER_TEMP/khan-stage-test"
           "$GODOT_BIN" --headless --path ./game res://scenes/khan_stage_test.tscn -- --khan-stage-test "--capture-dir=$RUNNER_TEMP/khan-stage-test"
 
+      - name: Run input-latency and determinism tests (--determinism-test)
+        run: |
+          mkdir -p "$RUNNER_TEMP/determinism"
+          "$GODOT_BIN" --headless --path ./game -- --determinism-test "--capture-dir=$RUNNER_TEMP/determinism"
+
       - name: Upload validation reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -75,3 +80,4 @@ jobs:
             ${{ runner.temp }}/stage-proof/*.json
             ${{ runner.temp }}/combat-proof/*.json
             ${{ runner.temp }}/khan-stage-test/*.json
+            ${{ runner.temp }}/determinism/*.json

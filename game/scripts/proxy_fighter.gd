@@ -104,10 +104,10 @@ func step(delta: float, axis: float, jump: bool, guard: bool = false, attack: St
 		velocity.x = move_toward(velocity.x, 0.0, 12.0 * delta)
 	else:
 		velocity.x = move_toward(velocity.x, 0.0, 35.0 * delta)
-	if not is_on_floor():
+	if is_on_floor():
+		velocity.y = JUMP_SPEED if (jump and state == "idle") else -GRAVITY * delta
+	else:
 		velocity.y -= GRAVITY * delta
-	elif jump and state == "idle":
-		velocity.y = JUMP_SPEED
 	velocity.z = 0
 	move_and_slide()
 	position.x = clampf(position.x, -STAGE_LIMIT, STAGE_LIMIT)
@@ -198,6 +198,43 @@ func reset_combat() -> void:
 	flash_ticks = 0
 	time = 0.0
 	gait = 0.0
+	if is_instance_valid(visual):
+		_update_flash()
+		_pose(0.0)
+
+func snapshot_state() -> Dictionary:
+	return {
+		"px": position.x,
+		"py": position.y,
+		"pz": position.z,
+		"vx": velocity.x,
+		"vy": velocity.y,
+		"vz": velocity.z,
+		"facing": facing,
+		"health": health,
+		"state": state,
+		"state_ticks": state_ticks,
+		"attack_kind": attack_kind,
+		"attack_tick": attack_tick,
+		"attack_connected": attack_connected,
+		"gait": gait,
+		"time": time,
+		"flash_ticks": flash_ticks,
+	}
+
+func restore_state(snap: Dictionary) -> void:
+	position = Vector3(float(snap.px), float(snap.py), float(snap.pz))
+	velocity = Vector3(float(snap.vx), float(snap.vy), float(snap.vz))
+	facing = float(snap.facing)
+	health = int(snap.health)
+	state = String(snap.state)
+	state_ticks = int(snap.state_ticks)
+	attack_kind = String(snap.attack_kind)
+	attack_tick = int(snap.attack_tick)
+	attack_connected = bool(snap.attack_connected)
+	gait = float(snap.gait)
+	time = float(snap.time)
+	flash_ticks = int(snap.flash_ticks)
 	if is_instance_valid(visual):
 		_update_flash()
 		_pose(0.0)

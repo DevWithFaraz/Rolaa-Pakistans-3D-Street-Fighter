@@ -1,0 +1,25 @@
+{
+  "end_digest": "fight|3424|0|-1.131,0.001,90,idle,0,,23|1.891,0.001,90,idle,0,,23|0.372",
+  "engine": "4.7.2-stable (official)",
+  "failed": [],
+  "latencies_ticks": {
+    "p1_guard": 1,
+    "p1_jump": 1,
+    "p1_punch": 1,
+    "p2_kick": 1
+  },
+  "passed": [
+    "P1 punch input-to-state latency <= 3 frames (got 1)",
+    "P2 kick input-to-state latency <= 3 frames (got 1)",
+    "Kick hitbox activates on exact startup tick 12",
+    "P1 guard input-to-state latency <= 3 frames (got 1)",
+    "P1 jump input-to-state latency <= 3 frames (got 1)",
+    "180-tick two-fighter replay produces identical per-tick state digests",
+    "180-tick replay ends with identical full match snapshot",
+    "Snapshot restore at tick 75 replays remaining ticks identically",
+    "Snapshot restore ends with identical final state"
+  ],
+  "renderer": "gl_compatibility",
+  "sequence_ticks": 180,
+  "snapshot_tick": 75
+}

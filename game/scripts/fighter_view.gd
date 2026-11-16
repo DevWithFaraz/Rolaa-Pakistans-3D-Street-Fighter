@@ -96,6 +96,25 @@ func reset_combat() -> void:
 		_snap_to_idle()
 
 
+func snapshot_state() -> Dictionary:
+	var snap := super.snapshot_state()
+	snap["current_anim_state"] = current_anim_state
+	snap["move_axis"] = _move_axis
+	snap["advance_dt"] = _advance_dt
+	return snap
+
+
+func restore_state(snap: Dictionary) -> void:
+	_move_axis = float(snap.get("move_axis", 0.0))
+	_advance_dt = float(snap.get("advance_dt", 0.0))
+	var saved_anim := String(snap.get("current_anim_state", "idle"))
+	super.restore_state(snap)
+	if is_instance_valid(anim_tree) and not saved_anim.is_empty():
+		current_anim_state = saved_anim
+		anim_tree.set("parameters/state/transition_request", saved_anim)
+		anim_tree.advance(0.0)
+
+
 func _resolve_clip(state_key: String, fallback: StringName) -> StringName:
 	var clip := character_def.get_clip(state_key)
 	if not clip.is_empty() and anim_player.has_animation(clip):

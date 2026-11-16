@@ -1,0 +1,37 @@
+{
+  "character": "asim",
+  "source_blend": "outputs\\asim-model1\\blender\\asim-model1-final-rig.blend",
+  "glb_out": "game\\assets\\characters\\asim_model1.glb",
+  "source_triangles": 284999,
+  "source_vertices": 142500,
+  "target_triangles": 62000,
+  "final_triangles": 61999,
+  "final_vertices": 31000,
+  "reduction_percent": 78.25,
+  "unweighted_vertices": 0,
+  "nonmanifold_edges": 3,
+  "source_panel_vertices": 0,
+  "final_panel_vertices": 0,
+  "uv_layers": [
+    "UVMap"
+  ],
+  "glb": {
+    "bytes": 7281944,
+    "mb": 6.94,
+    "animations": [
+      "Idle",
+      "Idle2",
+      "Punch",
+      "MmaKick",
+      "Walk",
+      "QuadPunch",
+      "RoundhouseKick",
+      "Headbutt"
+    ],
+    "meshes": 1,
+    "skin_joints": [
+      65
+    ],
+    "images": 3
+  }
+}

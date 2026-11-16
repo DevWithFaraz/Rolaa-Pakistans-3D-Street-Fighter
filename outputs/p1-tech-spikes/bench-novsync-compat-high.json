@@ -1,0 +1,31 @@
+{
+  "adapter_api": "3.3.0 - Build 32.0.101.7085",
+  "adapter_name": "Intel(R) Iris(R) Xe Graphics",
+  "avg_draw_calls": 140,
+  "avg_fps": 64.0,
+  "avg_frame_time_ms": 15.62,
+  "avg_objects_in_frame": 384,
+  "avg_primitives": 199711,
+  "cpu_process_avg_ms": 58.83,
+  "cpu_process_p99_ms": 68.27,
+  "engine": "4.7.2-stable (official)",
+  "max_draw_calls": 147,
+  "max_frame_time_ms": 71.4,
+  "max_primitives": 200002,
+  "meets_60fps_avg": true,
+  "meets_p99_20ms": false,
+  "p50_frame_time_ms": 11.12,
+  "p95_frame_time_ms": 43.04,
+  "p99_frame_time_ms": 54.32,
+  "preset": "high",
+  "ram_mb": 76.0,
+  "renderer": "gl_compatibility",
+  "resolution": [
+    1280,
+    720
+  ],
+  "sample_frames": 240,
+  "vram_mb": 130.0,
+  "vsync_mode": 0,
+  "warmup_frames": 30
+}

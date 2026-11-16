@@ -133,12 +133,14 @@ func _draw_controls() -> void:
 	_text("F2  tour    H  help    F3  diagnostics    Esc  pause    M  mute", Vector2(610, 676), 13, MUTED)
 
 func _draw_diagnostics() -> void:
-	draw_rect(Rect2(924, 179, 332, 131), PANEL)
-	_text("RENDER / COMPATIBILITY", Vector2(940, 202), 11, GOLD)
-	_text("%d FPS  ·  %.1f ms process" % [Engine.get_frames_per_second(), Performance.get_monitor(Performance.TIME_PROCESS) * 1000], Vector2(940, 226), 13, WHITE)
-	_text("Camera X  %+.2f   |   fixed lens" % proof.camera.position.x, Vector2(940, 250), 13, WHITE)
-	_text("Shadows  %s   |   F4 to toggle" % ("ON" if proof.sun.shadow_enabled else "OFF"), Vector2(940, 274), 12, WHITE)
-	_text("P1 %s   /   P2 %s" % [proof.fighters[0].state, proof.fighters[1].state], Vector2(940, 296), 11, MUTED)
+	draw_rect(Rect2(896, 179, 360, 155), PANEL)
+	var renderer_name := RenderingServer.get_current_rendering_method().to_upper()
+	var preset_name: String = str(proof.get("quality_preset")).to_upper()
+	_text("RENDER / %s  (%s)" % [renderer_name, preset_name], Vector2(912, 202), 11, GOLD)
+	_text("%d FPS  ·  %.1f ms process" % [Engine.get_frames_per_second(), Performance.get_monitor(Performance.TIME_PROCESS) * 1000], Vector2(912, 226), 13, WHITE)
+	_text("Draw %d  ·  Tris/Prim %d" % [int(Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME)), int(Performance.get_monitor(Performance.RENDER_TOTAL_PRIMITIVES_IN_FRAME))], Vector2(912, 250), 12, WHITE)
+	_text("Camera X  %+.2f  |  Shadows %s (F4)" % [proof.camera.position.x, "ON" if proof.sun.shadow_enabled else "OFF"], Vector2(912, 274), 11, WHITE)
+	_text("F5 preset   |   P1 %s / P2 %s" % [proof.fighters[0].state, proof.fighters[1].state], Vector2(912, 298), 11, MUTED)
 
 func _banner(eyebrow: String, title: String, subtitle: String, accent: Color) -> void:
 	draw_rect(Rect2(190, 260, 900, 152), Color(0.06, 0.13, 0.16, 0.95))
