@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_movedata"]
+
+[resource]
+script = ExtResource("1_movedata")
+id = "kick"
+display_name = "Kick"
+animation_clip = &"MmaKick"
+startup_ticks = 12
+active_ticks = 4
+recovery_ticks = 22
+damage = 17
+reach = 2.4
+box_low = 1.15
+box_height = 0.95
+knockback = 6.0
+hitstun_ticks = 25
+blockstun_ticks = 17
+hitstop_ticks = 7
+hit_level = "mid"
+clip_start_sec = 0.06
+contact_start_sec = 0.88
+contact_end_sec = 0.98
+clip_end_sec = 2.2

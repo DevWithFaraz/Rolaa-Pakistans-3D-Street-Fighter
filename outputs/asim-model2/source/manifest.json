@@ -1,0 +1,16 @@
+[
+  {
+    "Original": "C:\\Users\\IT\\Downloads\\military officer 3d model.glb",
+    "PreservedCopy": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model2\\source\\asim-model2-original.glb",
+    "SHA256": "4560457875D854CF1531EB8B6BEDC117291D6922F1CEC7821F9689D85A6502EB",
+    "Bytes": 19988784,
+    "VerifiedIdentical": true,
+    "Notes": "Uses KHR_mesh_quantization and EXT_meshopt_compression; unpacked losslessly for Blender 4.5 to asim-model2-uncompressed.glb"
+  },
+  {
+    "UnpackedFrom": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model2\\source\\asim-model2-original.glb",
+    "UnpackedCopy": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model2\\source\\asim-model2-uncompressed.glb",
+    "UnpackedBytes": 64378492,
+    "Method": "@gltf-transform dequantize + meshoptimizer decode (EXT_meshopt_compression removed for Blender 4.5 import)"
+  }
+]

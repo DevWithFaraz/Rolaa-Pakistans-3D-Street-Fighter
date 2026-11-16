@@ -1,0 +1,35 @@
+{
+  "clips": [
+    {
+      "clip": "Idle",
+      "frames": 251,
+      "max_control_edge_stretch": 1.1079960521916115,
+      "end_start_offset_rms_m": 0.0018981179569604154
+    },
+    {
+      "clip": "Idle2",
+      "frames": 60,
+      "max_control_edge_stretch": 1.107750929736415,
+      "end_start_offset_rms_m": 0.004185547213773896
+    },
+    {
+      "clip": "Punch",
+      "frames": 32,
+      "max_control_edge_stretch": 1.1832859104668048,
+      "end_start_offset_rms_m": 0.006684993389613176
+    },
+    {
+      "clip": "MmaKick",
+      "frames": 49,
+      "max_control_edge_stretch": 1.3760355702091858,
+      "end_start_offset_rms_m": 0.007629765437008579
+    }
+  ],
+  "front_faces": 1973,
+  "back_faces": 2522,
+  "front_vertices": 1154,
+  "back_vertices": 1455,
+  "refitted_artificial_upper_trouser_vertices": 14617,
+  "uv_unchanged": true,
+  "status": "Side-slit webbing removed; separated front/back control cage; awaiting visual acceptance."
+}

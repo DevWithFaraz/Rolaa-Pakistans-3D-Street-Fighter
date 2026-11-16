@@ -1,0 +1,218 @@
+[
+  {
+    "file": "Idle.fbx",
+    "clip": "Idle",
+    "action": "Asim_Idle",
+    "frames": [
+      1.0,
+      301.0
+    ],
+    "duration_s": 10.0,
+    "scene_fps": 30,
+    "retargeted": true,
+    "source_rest_matrix_max_difference": 0.946657,
+    "baked_rest_matrix_max_difference": 0.0,
+    "retarget_min_axis_dot": 1.0,
+    "retarget_worst_bone": "mixamorig:LeftUpLeg",
+    "in_place_drift_removed": false,
+    "min_shoe_z_m": -0.00038,
+    "loop_quat_delta": 0.0,
+    "same_bone_names": true,
+    "bone_count": 65,
+    "slots": [
+      [
+        "Armature|mixamo.com|Layer0",
+        "OBJECT"
+      ]
+    ]
+  },
+  {
+    "file": "Standing Idle To Fight Idle.fbx",
+    "clip": "Idle2",
+    "action": "Asim_Idle2",
+    "frames": [
+      1.0,
+      60.0
+    ],
+    "duration_s": 1.9667,
+    "scene_fps": 30,
+    "retargeted": true,
+    "source_rest_matrix_max_difference": 0.946657,
+    "baked_rest_matrix_max_difference": 0.0,
+    "retarget_min_axis_dot": 1.0,
+    "retarget_worst_bone": "mixamorig:LeftHandIndex4",
+    "in_place_drift_removed": true,
+    "min_shoe_z_m": 0.00097,
+    "loop_quat_delta": 0.0,
+    "same_bone_names": true,
+    "bone_count": 65,
+    "slots": [
+      [
+        "Armature|mixamo.com|Layer0",
+        "OBJECT"
+      ]
+    ]
+  },
+  {
+    "file": "Punching.fbx",
+    "clip": "Punch",
+    "action": "Asim_Punch",
+    "frames": [
+      1.0,
+      39.0
+    ],
+    "duration_s": 1.2667,
+    "scene_fps": 30,
+    "retargeted": true,
+    "source_rest_matrix_max_difference": 0.946657,
+    "baked_rest_matrix_max_difference": 0.0,
+    "retarget_min_axis_dot": 1.0,
+    "retarget_worst_bone": "mixamorig:RightHandRing1",
+    "in_place_drift_removed": false,
+    "min_shoe_z_m": 0.00031,
+    "loop_quat_delta": 0.0,
+    "same_bone_names": true,
+    "bone_count": 65,
+    "slots": [
+      [
+        "Armature|mixamo.com|Layer0",
+        "OBJECT"
+      ]
+    ]
+  },
+  {
+    "file": "Kicking.fbx",
+    "clip": "MmaKick",
+    "action": "Asim_MmaKick",
+    "frames": [
+      1.0,
+      67.0
+    ],
+    "duration_s": 2.2,
+    "scene_fps": 30,
+    "retargeted": true,
+    "source_rest_matrix_max_difference": 0.946657,
+    "baked_rest_matrix_max_difference": 0.0,
+    "retarget_min_axis_dot": 1.0,
+    "retarget_worst_bone": "mixamorig:LeftHandMiddle2",
+    "in_place_drift_removed": false,
+    "min_shoe_z_m": 0.0171,
+    "loop_quat_delta": 0.000299,
+    "same_bone_names": true,
+    "bone_count": 65,
+    "slots": [
+      [
+        "Armature|mixamo.com|Layer0",
+        "OBJECT"
+      ]
+    ]
+  },
+  {
+    "file": "Walking.fbx",
+    "clip": "Walk",
+    "action": "Asim_Walk",
+    "frames": [
+      1.0,
+      32.0
+    ],
+    "duration_s": 1.0333,
+    "scene_fps": 30,
+    "retargeted": true,
+    "source_rest_matrix_max_difference": 0.946657,
+    "baked_rest_matrix_max_difference": 0.0,
+    "retarget_min_axis_dot": 1.0,
+    "retarget_worst_bone": "mixamorig:RightHandPinky1",
+    "in_place_drift_removed": true,
+    "min_shoe_z_m": -0.00058,
+    "loop_quat_delta": 0.0,
+    "same_bone_names": true,
+    "bone_count": 65,
+    "slots": [
+      [
+        "Armature|mixamo.com|Layer0",
+        "OBJECT"
+      ]
+    ]
+  },
+  {
+    "file": "Quad Punch.fbx",
+    "clip": "QuadPunch",
+    "action": "Asim_QuadPunch",
+    "frames": [
+      1.0,
+      66.0
+    ],
+    "duration_s": 2.1667,
+    "scene_fps": 30,
+    "retargeted": true,
+    "source_rest_matrix_max_difference": 0.946657,
+    "baked_rest_matrix_max_difference": 0.0,
+    "retarget_min_axis_dot": 1.0,
+    "retarget_worst_bone": "mixamorig:RightUpLeg",
+    "in_place_drift_removed": false,
+    "min_shoe_z_m": -0.00029,
+    "loop_quat_delta": 0.0,
+    "same_bone_names": true,
+    "bone_count": 65,
+    "slots": [
+      [
+        "Armature|mixamo.com|Layer0",
+        "OBJECT"
+      ]
+    ]
+  },
+  {
+    "file": "Roundhouse Kick.fbx",
+    "clip": "RoundhouseKick",
+    "action": "Asim_RoundhouseKick",
+    "frames": [
+      1.0,
+      76.0
+    ],
+    "duration_s": 2.5,
+    "scene_fps": 30,
+    "retargeted": true,
+    "source_rest_matrix_max_difference": 0.946657,
+    "baked_rest_matrix_max_difference": 0.0,
+    "retarget_min_axis_dot": 1.0,
+    "retarget_worst_bone": "mixamorig:RightHandThumb3",
+    "in_place_drift_removed": false,
+    "min_shoe_z_m": 3e-05,
+    "loop_quat_delta": 0.0,
+    "same_bone_names": true,
+    "bone_count": 65,
+    "slots": [
+      [
+        "Armature|mixamo.com|Layer0",
+        "OBJECT"
+      ]
+    ]
+  },
+  {
+    "file": "Headbutt.fbx",
+    "clip": "Headbutt",
+    "action": "Asim_Headbutt",
+    "frames": [
+      1.0,
+      64.0
+    ],
+    "duration_s": 2.1,
+    "scene_fps": 30,
+    "retargeted": true,
+    "source_rest_matrix_max_difference": 0.946657,
+    "baked_rest_matrix_max_difference": 0.0,
+    "retarget_min_axis_dot": 1.0,
+    "retarget_worst_bone": "mixamorig:LeftHandRing4",
+    "in_place_drift_removed": false,
+    "min_shoe_z_m": -0.00021,
+    "loop_quat_delta": 0.0,
+    "same_bone_names": true,
+    "bone_count": 65,
+    "slots": [
+      [
+        "Armature|mixamo.com|Layer0",
+        "OBJECT"
+      ]
+    ]
+  }
+]

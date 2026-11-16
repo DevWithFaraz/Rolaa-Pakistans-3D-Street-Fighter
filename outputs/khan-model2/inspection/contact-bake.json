@@ -1,0 +1,463 @@
+{
+  "samples": [
+    {
+      "clip": "Idle",
+      "frame": 1,
+      "moved": 820,
+      "max_offset": 0.26856814538359364
+    },
+    {
+      "clip": "Idle",
+      "frame": 11,
+      "moved": 826,
+      "max_offset": 0.2685649125837526
+    },
+    {
+      "clip": "Idle",
+      "frame": 21,
+      "moved": 847,
+      "max_offset": 0.26976216981552675
+    },
+    {
+      "clip": "Idle",
+      "frame": 31,
+      "moved": 849,
+      "max_offset": 0.26966141338338206
+    },
+    {
+      "clip": "Idle",
+      "frame": 41,
+      "moved": 834,
+      "max_offset": 0.26819229523425636
+    },
+    {
+      "clip": "Idle",
+      "frame": 51,
+      "moved": 823,
+      "max_offset": 0.267446861186342
+    },
+    {
+      "clip": "Idle",
+      "frame": 61,
+      "moved": 827,
+      "max_offset": 0.26678790530222984
+    },
+    {
+      "clip": "Idle",
+      "frame": 71,
+      "moved": 833,
+      "max_offset": 0.26662936405520676
+    },
+    {
+      "clip": "Idle",
+      "frame": 81,
+      "moved": 833,
+      "max_offset": 0.26686381724039687
+    },
+    {
+      "clip": "Idle",
+      "frame": 91,
+      "moved": 832,
+      "max_offset": 0.2657677348562534
+    },
+    {
+      "clip": "Idle",
+      "frame": 101,
+      "moved": 832,
+      "max_offset": 0.2641230035792235
+    },
+    {
+      "clip": "Idle",
+      "frame": 111,
+      "moved": 834,
+      "max_offset": 0.2634516003915951
+    },
+    {
+      "clip": "Idle",
+      "frame": 121,
+      "moved": 834,
+      "max_offset": 0.2617778509234877
+    },
+    {
+      "clip": "Idle",
+      "frame": 131,
+      "moved": 837,
+      "max_offset": 0.26204650501556814
+    },
+    {
+      "clip": "Idle",
+      "frame": 141,
+      "moved": 835,
+      "max_offset": 0.26389219248310836
+    },
+    {
+      "clip": "Idle",
+      "frame": 151,
+      "moved": 836,
+      "max_offset": 0.2647059469946688
+    },
+    {
+      "clip": "Idle",
+      "frame": 161,
+      "moved": 836,
+      "max_offset": 0.2647800550458684
+    },
+    {
+      "clip": "Idle",
+      "frame": 171,
+      "moved": 829,
+      "max_offset": 0.2659356351967112
+    },
+    {
+      "clip": "Idle",
+      "frame": 181,
+      "moved": 833,
+      "max_offset": 0.26650278873196087
+    },
+    {
+      "clip": "Idle",
+      "frame": 191,
+      "moved": 834,
+      "max_offset": 0.2661811180160507
+    },
+    {
+      "clip": "Idle",
+      "frame": 201,
+      "moved": 831,
+      "max_offset": 0.2669395910435727
+    },
+    {
+      "clip": "Idle",
+      "frame": 211,
+      "moved": 826,
+      "max_offset": 0.2673088632117941
+    },
+    {
+      "clip": "Idle",
+      "frame": 221,
+      "moved": 819,
+      "max_offset": 0.2668024315967358
+    },
+    {
+      "clip": "Idle",
+      "frame": 231,
+      "moved": 822,
+      "max_offset": 0.2662226401073687
+    },
+    {
+      "clip": "Idle",
+      "frame": 241,
+      "moved": 812,
+      "max_offset": 0.267206121838721
+    },
+    {
+      "clip": "Idle",
+      "frame": 251,
+      "moved": 820,
+      "max_offset": 0.26856814538359364
+    },
+    {
+      "clip": "Idle2",
+      "frame": 1,
+      "moved": 849,
+      "max_offset": 0.33294188835023086
+    },
+    {
+      "clip": "Idle2",
+      "frame": 4,
+      "moved": 848,
+      "max_offset": 0.332656758470556
+    },
+    {
+      "clip": "Idle2",
+      "frame": 7,
+      "moved": 850,
+      "max_offset": 0.33212548011844
+    },
+    {
+      "clip": "Idle2",
+      "frame": 10,
+      "moved": 854,
+      "max_offset": 0.33106969825540883
+    },
+    {
+      "clip": "Idle2",
+      "frame": 13,
+      "moved": 852,
+      "max_offset": 0.32987038708315286
+    },
+    {
+      "clip": "Idle2",
+      "frame": 16,
+      "moved": 850,
+      "max_offset": 0.3288411179411276
+    },
+    {
+      "clip": "Idle2",
+      "frame": 19,
+      "moved": 845,
+      "max_offset": 0.3279302058665244
+    },
+    {
+      "clip": "Idle2",
+      "frame": 22,
+      "moved": 841,
+      "max_offset": 0.32729512202667793
+    },
+    {
+      "clip": "Idle2",
+      "frame": 25,
+      "moved": 840,
+      "max_offset": 0.3265838697013111
+    },
+    {
+      "clip": "Idle2",
+      "frame": 28,
+      "moved": 839,
+      "max_offset": 0.32645510974026204
+    },
+    {
+      "clip": "Idle2",
+      "frame": 31,
+      "moved": 840,
+      "max_offset": 0.3268701695871577
+    },
+    {
+      "clip": "Idle2",
+      "frame": 34,
+      "moved": 844,
+      "max_offset": 0.3277119260722791
+    },
+    {
+      "clip": "Idle2",
+      "frame": 37,
+      "moved": 845,
+      "max_offset": 0.32825353960256703
+    },
+    {
+      "clip": "Idle2",
+      "frame": 40,
+      "moved": 849,
+      "max_offset": 0.3290344091592059
+    },
+    {
+      "clip": "Idle2",
+      "frame": 43,
+      "moved": 851,
+      "max_offset": 0.3298106104081609
+    },
+    {
+      "clip": "Idle2",
+      "frame": 46,
+      "moved": 852,
+      "max_offset": 0.3304224164225822
+    },
+    {
+      "clip": "Idle2",
+      "frame": 49,
+      "moved": 851,
+      "max_offset": 0.3313511460668853
+    },
+    {
+      "clip": "Idle2",
+      "frame": 52,
+      "moved": 850,
+      "max_offset": 0.33197412797136827
+    },
+    {
+      "clip": "Idle2",
+      "frame": 55,
+      "moved": 847,
+      "max_offset": 0.3324767827379284
+    },
+    {
+      "clip": "Idle2",
+      "frame": 58,
+      "moved": 848,
+      "max_offset": 0.33277817000636645
+    },
+    {
+      "clip": "Idle2",
+      "frame": 60,
+      "moved": 849,
+      "max_offset": 0.3329129310680682
+    },
+    {
+      "clip": "Punch",
+      "frame": 1,
+      "moved": 690,
+      "max_offset": 0.4568503670902759
+    },
+    {
+      "clip": "Punch",
+      "frame": 4,
+      "moved": 673,
+      "max_offset": 0.46862102760822544
+    },
+    {
+      "clip": "Punch",
+      "frame": 7,
+      "moved": 618,
+      "max_offset": 0.505091952203238
+    },
+    {
+      "clip": "Punch",
+      "frame": 10,
+      "moved": 450,
+      "max_offset": 0.5243328114119201
+    },
+    {
+      "clip": "Punch",
+      "frame": 13,
+      "moved": 370,
+      "max_offset": 0.5264957422272405
+    },
+    {
+      "clip": "Punch",
+      "frame": 16,
+      "moved": 443,
+      "max_offset": 0.5322420115809708
+    },
+    {
+      "clip": "Punch",
+      "frame": 19,
+      "moved": 511,
+      "max_offset": 0.5170161781934367
+    },
+    {
+      "clip": "Punch",
+      "frame": 22,
+      "moved": 558,
+      "max_offset": 0.48756990544772005
+    },
+    {
+      "clip": "Punch",
+      "frame": 25,
+      "moved": 615,
+      "max_offset": 0.4884694699867272
+    },
+    {
+      "clip": "Punch",
+      "frame": 28,
+      "moved": 650,
+      "max_offset": 0.4856865410974764
+    },
+    {
+      "clip": "Punch",
+      "frame": 31,
+      "moved": 684,
+      "max_offset": 0.46465127029293024
+    },
+    {
+      "clip": "Punch",
+      "frame": 32,
+      "moved": 690,
+      "max_offset": 0.4568503670902759
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 1,
+      "moved": 799,
+      "max_offset": 0.4555548534073269
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 4,
+      "moved": 799,
+      "max_offset": 0.45414790819402395
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 7,
+      "moved": 795,
+      "max_offset": 0.428981552218944
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 10,
+      "moved": 739,
+      "max_offset": 0.3857840221088837
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 13,
+      "moved": 800,
+      "max_offset": 0.3693476533494091
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 16,
+      "moved": 676,
+      "max_offset": 0.5024795355569256
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 19,
+      "moved": 186,
+      "max_offset": 0.7200104478361145
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 22,
+      "moved": 166,
+      "max_offset": 0.7277673606338344
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 25,
+      "moved": 263,
+      "max_offset": 0.714954992925181
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 28,
+      "moved": 557,
+      "max_offset": 0.5994732668100513
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 31,
+      "moved": 638,
+      "max_offset": 0.4176327298085091
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 34,
+      "moved": 622,
+      "max_offset": 0.29885237344641286
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 37,
+      "moved": 638,
+      "max_offset": 0.3471596293700665
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 40,
+      "moved": 655,
+      "max_offset": 0.3911010596512473
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 43,
+      "moved": 717,
+      "max_offset": 0.45081544718803845
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 46,
+      "moved": 813,
+      "max_offset": 0.4567850473236076
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 49,
+      "moved": 800,
+      "max_offset": 0.4555269379604367
+    }
+  ],
+  "shape_count": 76,
+  "cloth_vertices": 2336,
+  "status": "Contact projection trial; render validation required"
+}

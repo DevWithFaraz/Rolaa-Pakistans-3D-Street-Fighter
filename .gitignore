@@ -1,0 +1,26 @@
+# Local tools, caches & logs
+work/
+game/.godot/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Multi-GB Blender backups, Mixamo FBX sources & raw 4K textures
+*.blend
+*.blend1
+*.fbx
+outputs/**/source/*.glb
+outputs/**/textures/raw_4k/
+outputs/**/inspection/**/*.png
+!outputs/khan-model2/inspection/khan-stage-test/*.png
+
+# Superseded experimental Khan trial GLBs & extracted textures (keep active asim_model1 & khan_recovery_trial)
+game/assets/characters/khan_cloth_hands_v2*
+game/assets/characters/khan_contact_pose_trial*
+game/assets/characters/khan_contact_trial*
+game/assets/characters/khan_draped_trial*
+game/assets/characters/khan_garment_trial*
+game/assets/characters/khan_native_cloth_idle_static*
+game/assets/characters/khan_surface_fit_trial*
+game/assets/characters/khan_textured_seam_trial*

@@ -1,0 +1,16 @@
+{
+  "joins": [
+    {
+      "side": "Right",
+      "sewn_boundary_vertices": 602,
+      "rings": 14
+    },
+    {
+      "side": "Left",
+      "sewn_boundary_vertices": 626,
+      "rings": 14
+    }
+  ],
+  "vertices": 153993,
+  "status": "Continuous geometry; upper cloth texture stretched from cut boundary, needs final art."
+}

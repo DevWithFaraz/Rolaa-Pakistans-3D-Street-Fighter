@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Armature",
+    "type": "ARMATURE",
+    "dimensions": [
+      1.8304767608642578,
+      2.070180654525757,
+      0.3211101293563843
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bones": 41,
+    "bone_names": [
+      "mixamorig:Hips",
+      "mixamorig:Spine",
+      "mixamorig:Spine1",
+      "mixamorig:Spine2",
+      "mixamorig:Neck",
+      "mixamorig:Head",
+      "mixamorig:HeadTop_End",
+      "mixamorig:LeftShoulder",
+      "mixamorig:LeftArm",
+      "mixamorig:LeftForeArm",
+      "mixamorig:LeftHand",
+      "mixamorig:LeftHandThumb1",
+      "mixamorig:LeftHandThumb2",
+      "mixamorig:LeftHandThumb3",
+      "mixamorig:LeftHandThumb4",
+      "mixamorig:LeftHandIndex1",
+      "mixamorig:LeftHandIndex2",
+      "mixamorig:LeftHandIndex3",
+      "mixamorig:LeftHandIndex4",
+      "mixamorig:RightShoulder",
+      "mixamorig:RightArm",
+      "mixamorig:RightForeArm",
+      "mixamorig:RightHand",
+      "mixamorig:RightHandThumb1",
+      "mixamorig:RightHandThumb2",
+      "mixamorig:RightHandThumb3",
+      "mixamorig:RightHandThumb4",
+      "mixamorig:RightHandIndex1",
+      "mixamorig:RightHandIndex2",
+      "mixamorig:RightHandIndex3",
+      "mixamorig:RightHandIndex4",
+      "mixamorig:LeftUpLeg",
+      "mixamorig:LeftLeg",
+      "mixamorig:LeftFoot",
+      "mixamorig:LeftToeBase",
+      "mixamorig:LeftToe_End",
+      "mixamorig:RightUpLeg",
+      "mixamorig:RightLeg",
+      "mixamorig:RightFoot",
+      "mixamorig:RightToeBase",
+      "mixamorig:RightToe_End"
+    ],
+    "action": "Armature|mixamo.com|Layer0"
+  },
+  {
+    "name": "Khan_Model2_Working",
+    "type": "MESH",
+    "dimensions": [
+      1.792741060256958,
+      0.35350149869918823,
+      1.8029053211212158
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "verts": 75911,
+    "tris": 151826,
+    "groups": 34,
+    "modifiers": [
+      [
+        "Armature",
+        "ARMATURE"
+      ]
+    ],
+    "materials": [
+      "Khan_Working_Material"
+    ]
+  }
+]

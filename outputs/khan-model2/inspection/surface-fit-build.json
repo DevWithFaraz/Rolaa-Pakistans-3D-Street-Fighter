@@ -1,0 +1,32 @@
+{
+  "kind": "Baked smooth garment clearance; not cloth simulation",
+  "signatures_before": {
+    "coordinates": "d01a34a47ac5c44d711727278f1c81522ba2c69d067c6b75dedcf27ed3955365",
+    "uv": "7b5ccb8e825079d9c0d265e8c67d233ee43cbf7d93197d1b81a1c9e814c446cb"
+  },
+  "clips": [
+    {
+      "clip": "Idle",
+      "frames": 251,
+      "max_clearance": 0.09442942575422228
+    },
+    {
+      "clip": "Idle2",
+      "frames": 60,
+      "max_clearance": 0.15910631277596524
+    },
+    {
+      "clip": "Punch",
+      "frames": 32,
+      "max_clearance": 0.3624911549022526
+    },
+    {
+      "clip": "MmaKick",
+      "frames": 49,
+      "max_clearance": 0.5105150005899884
+    }
+  ],
+  "cloth_vertices": 2430,
+  "controls": 128,
+  "coordinates_and_uv_unchanged": true
+}

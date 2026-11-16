@@ -1,0 +1,30 @@
+{
+  "meshes": [
+    {
+      "name": "Khan_Garment_Body",
+      "vertices": 153993,
+      "triangles": 306683,
+      "uv_layers": 1,
+      "unweighted": 0,
+      "maximum_weight_sum_error": 1.123407855629921e-07
+    },
+    {
+      "name": "Kameez_Front_Panel",
+      "vertices": 1186,
+      "triangles": 1523,
+      "uv_layers": 1,
+      "unweighted": 0,
+      "maximum_weight_sum_error": 3.941596560252947e-08
+    },
+    {
+      "name": "Kameez_Back_Panel",
+      "vertices": 1301,
+      "triangles": 1654,
+      "uv_layers": 1,
+      "unweighted": 0,
+      "maximum_weight_sum_error": 3.508981194499938e-08
+    }
+  ],
+  "total_triangles": 309860,
+  "final_runtime_budget_met": false
+}

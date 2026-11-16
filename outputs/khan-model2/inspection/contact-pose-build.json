@@ -1,0 +1,52 @@
+[
+  {
+    "iteration": 0,
+    "near_or_inside_vertices": 123,
+    "max_control_step": 0.01722927354705885
+  },
+  {
+    "iteration": 1,
+    "near_or_inside_vertices": 99,
+    "max_control_step": 0.009759608377291257
+  },
+  {
+    "iteration": 2,
+    "near_or_inside_vertices": 88,
+    "max_control_step": 0.007663895574833016
+  },
+  {
+    "iteration": 3,
+    "near_or_inside_vertices": 71,
+    "max_control_step": 0.005163307005587484
+  },
+  {
+    "iteration": 4,
+    "near_or_inside_vertices": 61,
+    "max_control_step": 0.0036552732799943516
+  },
+  {
+    "iteration": 5,
+    "near_or_inside_vertices": 60,
+    "max_control_step": 0.0026855739731149945
+  },
+  {
+    "iteration": 6,
+    "near_or_inside_vertices": 53,
+    "max_control_step": 0.0018848116206629758
+  },
+  {
+    "iteration": 7,
+    "near_or_inside_vertices": 52,
+    "max_control_step": 0.0013249535130975608
+  },
+  {
+    "iteration": 8,
+    "near_or_inside_vertices": 44,
+    "max_control_step": 0.0009086281299821668
+  },
+  {
+    "iteration": 9,
+    "near_or_inside_vertices": 44,
+    "max_control_step": 0.0013506083907108945
+  }
+]

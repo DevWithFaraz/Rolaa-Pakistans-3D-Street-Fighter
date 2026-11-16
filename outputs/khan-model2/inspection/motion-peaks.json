@@ -1,0 +1,38 @@
+[
+  {
+    "clip": "Idle",
+    "frame_range": [
+      1.0,
+      251.0
+    ],
+    "inspection_frame": 125,
+    "max_foot_height": 0.12140048295259476
+  },
+  {
+    "clip": "Idle2",
+    "frame_range": [
+      1.0,
+      60.0
+    ],
+    "inspection_frame": 30,
+    "max_foot_height": 0.12076037377119064
+  },
+  {
+    "clip": "Punch",
+    "frame_range": [
+      1.0,
+      32.0
+    ],
+    "inspection_frame": 18,
+    "max_foot_height": 0.12048595398664474
+  },
+  {
+    "clip": "MmaKick",
+    "frame_range": [
+      1.0,
+      49.0
+    ],
+    "inspection_frame": 21,
+    "max_foot_height": 1.0619738101959229
+  }
+]

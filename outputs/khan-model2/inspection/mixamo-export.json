@@ -1,0 +1,29 @@
+{
+  "export": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\khan-model2\\mixamo\\Khan_Model2_Rigging_Trial.fbx",
+  "bytes": 4413884,
+  "result": [
+    "FINISHED"
+  ],
+  "textures": [
+    {
+      "path": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\khan-model2\\textures\\Khan_Working_kurta_pajama_3d_model_basecolor.jpg",
+      "sha256": "35708a222636908e772cc7f6447cbfd9ddbb50fb0e5e50d04c0f8f910742b3af",
+      "identical_to_source": true
+    },
+    {
+      "path": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\khan-model2\\textures\\Khan_Working_kurta_pajama_3d_model_rm.jpg",
+      "sha256": "95729bd285e51161c6aec56c5940c3e668002d566ef3cdd1ffe86d56b610df0c",
+      "identical_to_source": true
+    },
+    {
+      "path": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\khan-model2\\textures\\Khan_Working_kurta_pajama_3d_model_normal.jpg",
+      "sha256": "13cbe367a98963f0400fdf51a6a579b919e614e881f28bb9550c58bed40f1a65",
+      "identical_to_source": true
+    }
+  ],
+  "animation_included": false,
+  "rig_included": false,
+  "object_names": [
+    "Khan_Model2_Working"
+  ]
+}

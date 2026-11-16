@@ -1,0 +1,16 @@
+{
+  "panels": {
+    "front": {
+      "vertices": 1229,
+      "faces": 1268
+    },
+    "back": {
+      "vertices": 1275,
+      "faces": 1291
+    }
+  },
+  "bones": 91,
+  "grid_columns": 5,
+  "grid_rows": 6,
+  "attachment_top": 1.16
+}

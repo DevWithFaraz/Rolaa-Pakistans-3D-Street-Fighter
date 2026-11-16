@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="CharacterDef" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_def.gd" id="1_chardef"]
+[ext_resource type="Resource" path="res://characters/asim/moves/punch.tres" id="2_punch"]
+[ext_resource type="Resource" path="res://characters/asim/moves/kick.tres" id="3_kick"]
+
+[resource]
+script = ExtResource("1_chardef")
+id = "asim"
+display_name = "ASIM JANI"
+archetype = "Commander"
+model_path = "res://assets/characters/asim_model1.glb"
+model_scale = 1.95
+model_yaw_rad = 1.5707964
+xfade_time = 0.06
+walk_speed = 4.8
+jump_speed = 8.0
+max_health = 100
+clip_map = {
+"guard": &"Idle2",
+"headbutt": &"Headbutt",
+"idle": &"Idle",
+"kick": &"MmaKick",
+"punch": &"Punch",
+"quad_punch": &"QuadPunch",
+"roundhouse_kick": &"RoundhouseKick",
+"walk": &"Walk"
+}
+loop_clips = PackedStringArray("Idle", "Idle2", "Walk")
+moves = {
+"kick": ExtResource("3_kick"),
+"punch": ExtResource("2_punch")
+}
+voice_bank = {}

@@ -1,0 +1,76 @@
+name: Rolaa Headless Godot Tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  godot-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Godot Linux dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libfontconfig1 libx11-6 libxcursor1 libxinerama1 \
+            libgl1 libxi6 libxrandr2 libxrender1 unzip jq curl ca-certificates
+
+      - name: Download Godot 4.x (Linux x86_64)
+        run: |
+          set -euo pipefail
+          URL=""
+          for API in \
+            "https://api.github.com/repos/godotengine/godot-builds/releases/tags/4.7.2-stable" \
+            "https://api.github.com/repos/godotengine/godot/releases/tags/4.7.2-stable" \
+            "https://api.github.com/repos/godotengine/godot-builds/releases/latest" \
+            "https://api.github.com/repos/godotengine/godot/releases/latest"; do
+            if JSON=$(curl -fsSL "$API" 2>/dev/null); then
+              URL=$(echo "$JSON" | jq -r '.assets[]?.browser_download_url | select(endswith("_linux.x86_64.zip") and (contains("mono") | not))' | head -n1 || true)
+              if [ -n "$URL" ]; then
+                break
+              fi
+            fi
+          done
+          if [ -z "$URL" ]; then
+            echo "Failed to resolve Godot Linux x86_64 release URL" >&2
+            exit 1
+          fi
+          echo "Downloading $URL"
+          curl -fL "$URL" -o "$RUNNER_TEMP/godot.zip"
+          unzip -q "$RUNNER_TEMP/godot.zip" -d "$RUNNER_TEMP/godot"
+          BIN=$(find "$RUNNER_TEMP/godot" -maxdepth 2 -type f -name "Godot_*_linux.x86_64" | head -n1)
+          chmod +x "$BIN"
+          echo "GODOT_BIN=$BIN" >> "$GITHUB_ENV"
+
+      - name: Import Godot project resources
+        run: "$GODOT_BIN" --headless --path ./game --import
+
+      - name: Run stage proof tests (--self-test)
+        run: |
+          mkdir -p "$RUNNER_TEMP/stage-proof"
+          "$GODOT_BIN" --headless --path ./game -- --self-test "--capture-dir=$RUNNER_TEMP/stage-proof"
+
+      - name: Run combat proof tests (--combat-test)
+        run: |
+          mkdir -p "$RUNNER_TEMP/combat-proof"
+          "$GODOT_BIN" --headless --path ./game -- --combat-test "--capture-dir=$RUNNER_TEMP/combat-proof"
+
+      - name: Run rigged Khan vs Asim fight tests (--khan-stage-test)
+        run: |
+          mkdir -p "$RUNNER_TEMP/khan-stage-test"
+          "$GODOT_BIN" --headless --path ./game res://scenes/khan_stage_test.tscn -- --khan-stage-test "--capture-dir=$RUNNER_TEMP/khan-stage-test"
+
+      - name: Upload validation reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: godot-validation-reports
+          path: |
+            ${{ runner.temp }}/stage-proof/*.json
+            ${{ runner.temp }}/combat-proof/*.json
+            ${{ runner.temp }}/khan-stage-test/*.json

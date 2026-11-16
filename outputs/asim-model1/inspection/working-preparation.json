@@ -1,0 +1,39 @@
+{
+  "operation": "Rotated -90 deg Z to face -Y, grounded on Z=0, uniformly scaled to 1.80m, exact-position weld only preserving UVMap",
+  "source_vertices": 1004813,
+  "source_triangles": 1957791,
+  "working_vertices": 978896,
+  "working_triangles": 1957791,
+  "uv_layers": [
+    "UVMap"
+  ],
+  "working_dimensions": [
+    1.362188,
+    0.380252,
+    1.8
+  ],
+  "world_bbox_min": [
+    -0.681094,
+    -0.190126,
+    0.0
+  ],
+  "world_bbox_max": [
+    0.681094,
+    0.190126,
+    1.8
+  ],
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "boundary_edges": 2,
+  "nonmanifold_edges": 3,
+  "material_images": [
+    "Asim_Working_basecolor",
+    "Asim_Working_rm",
+    "Asim_Working_normal"
+  ],
+  "source_unchanged": true,
+  "blend_saved": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model1\\blender\\asim-model1-working.blend"
+}

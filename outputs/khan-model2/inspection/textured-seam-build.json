@@ -1,0 +1,12 @@
+{
+  "welded_vertices": 79,
+  "waist_boundary_edges_remaining": 6,
+  "refit_upper_trouser_vertices": 16857,
+  "materials": [
+    "Khan_Working_Material.001"
+  ],
+  "uvs": [
+    "UVMap"
+  ],
+  "status": "Awaiting visual and animation validation"
+}

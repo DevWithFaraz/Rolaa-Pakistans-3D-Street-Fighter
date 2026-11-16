@@ -1,0 +1,22 @@
+{
+  "fbx_version": 7400,
+  "videos": [
+    {
+      "name": "b'Khan_Working_kurta_pajama_3d_model_basecolor\\x00\\x01Video'",
+      "embedded_bytes": 273428
+    },
+    {
+      "name": "b'Khan_Working_kurta_pajama_3d_model_normal\\x00\\x01Video'",
+      "embedded_bytes": 129584
+    }
+  ],
+  "models": [
+    "b'Khan_Model2_Working\\x00\\x01Model'"
+  ],
+  "geometries": [
+    {
+      "vertices": 75911,
+      "polygon_index_count": 455478
+    }
+  ]
+}

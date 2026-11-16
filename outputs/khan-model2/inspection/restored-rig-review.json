@@ -1,0 +1,24 @@
+{
+  "triangles": 284676,
+  "vertices": 142336,
+  "exact_weight_copies": 63286,
+  "max_interpolation_distance_m": 0.007509828079491854,
+  "unweighted_vertices": 0,
+  "max_weight_sum_error": 4.842877388000488E-08,
+  "skeleton_bones": 41,
+  "finger_chains_per_hand": [
+    "thumb",
+    "index"
+  ],
+  "footwear_protection_z_m": 0.2,
+  "animations_tested": [
+    "downloaded T-pose only"
+  ],
+  "remaining": [
+    "Finger geometry and independent finger rig",
+    "Shoulder and tunic deformation under attacks",
+    "Runtime optimization/performance"
+  ],
+  "protected_vertices_checked": 85031,
+  "protected_max_displacement_m": 0.0
+}

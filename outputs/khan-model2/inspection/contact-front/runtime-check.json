@@ -1,0 +1,39 @@
+{
+  "bone_count": 59,
+  "clips": [
+    {
+      "frames_exercised": 100,
+      "length": 8.36666679382324,
+      "max_solver_tip_displacement_from_animated_rest": 0.0,
+      "name": "Idle",
+      "solver_samples": 0
+    },
+    {
+      "frames_exercised": 100,
+      "length": 2.0,
+      "max_solver_tip_displacement_from_animated_rest": 0.0,
+      "name": "Idle2",
+      "solver_samples": 0
+    },
+    {
+      "frames_exercised": 100,
+      "length": 1.06666672229767,
+      "max_solver_tip_displacement_from_animated_rest": 0.0,
+      "name": "Punch",
+      "solver_samples": 0
+    },
+    {
+      "frames_exercised": 100,
+      "length": 1.63333332538605,
+      "max_solver_tip_displacement_from_animated_rest": 0.0,
+      "name": "MmaKick",
+      "solver_samples": 0
+    }
+  ],
+  "cloth_enabled": false,
+  "finite_poses": true,
+  "performance_benchmark": false,
+  "sample_stage": "modifier result before influence blending; displacement includes pose clearance",
+  "spring_influence": 0.219999998807907,
+  "spring_settings": 2
+}

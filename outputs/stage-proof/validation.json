@@ -1,0 +1,31 @@
+{
+  "camera_max_x": 8.99999618530273,
+  "camera_min_x": -8.99999618530273,
+  "engine": "4.7.2-stable (official)",
+  "failed": [],
+  "note": "Integration checks; not a performance benchmark.",
+  "passed": [
+    "Both fighters stand on real road collision",
+    "Both fighters framed at spawn",
+    "Screenshot saved: stage-center",
+    "Camera tracks to left bound",
+    "Left stage boundary holds",
+    "Both fighters framed at left edge",
+    "Screenshot saved: stage-left",
+    "Camera tracks to right bound",
+    "Right stage boundary holds",
+    "Both fighters framed at right edge",
+    "Tracking preserves the chosen camera angle",
+    "Screenshot saved: stage-right",
+    "Jump leaves the ground",
+    "Jump remains in frame",
+    "Screenshot saved: stage-jump",
+    "Jump lands back on road",
+    "Pause freezes movement",
+    "Maximum spacing keeps both fighters on screen",
+    "Maximum separation fits camera",
+    "Movement stays on the fighting plane",
+    "Reset restores start positions"
+  ],
+  "renderer": "gl_compatibility"
+}

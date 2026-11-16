@@ -1,0 +1,137 @@
+{
+  "version": "4.5.14 LTS",
+  "scene": "Khan_Garment_Prototype",
+  "objects": [
+    [
+      "Khan_Garment_Rig",
+      "ARMATURE"
+    ],
+    [
+      "Khan_Garment_Body",
+      "MESH"
+    ],
+    [
+      "Kameez_Front_Panel",
+      "MESH"
+    ],
+    [
+      "Kameez_Back_Panel",
+      "MESH"
+    ]
+  ],
+  "body_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0000001192092896,
+      2.0985676485452132e-07,
+      0.0
+    ],
+    [
+      0.0,
+      -2.0985676485452132e-07,
+      1.0000001192092896,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "groups": [
+    "mixamorig:Hips",
+    "mixamorig:Spine",
+    "mixamorig:Spine1",
+    "mixamorig:Spine2",
+    "mixamorig:Neck",
+    "mixamorig:Head",
+    "mixamorig:LeftShoulder",
+    "mixamorig:LeftArm",
+    "mixamorig:LeftForeArm",
+    "mixamorig:LeftHand",
+    "mixamorig:LeftHandThumb1",
+    "mixamorig:LeftHandThumb2",
+    "mixamorig:LeftHandThumb3",
+    "mixamorig:LeftHandIndex1",
+    "mixamorig:LeftHandIndex2",
+    "mixamorig:LeftHandIndex3",
+    "mixamorig:RightShoulder",
+    "mixamorig:RightArm",
+    "mixamorig:RightForeArm",
+    "mixamorig:RightHand",
+    "mixamorig:RightHandThumb1",
+    "mixamorig:RightHandThumb2",
+    "mixamorig:RightHandThumb3",
+    "mixamorig:RightHandIndex1",
+    "mixamorig:RightHandIndex2",
+    "mixamorig:RightHandIndex3",
+    "mixamorig:LeftUpLeg",
+    "mixamorig:LeftLeg",
+    "mixamorig:LeftFoot",
+    "mixamorig:LeftToeBase",
+    "mixamorig:RightUpLeg",
+    "mixamorig:RightLeg",
+    "mixamorig:RightFoot",
+    "mixamorig:RightToeBase"
+  ],
+  "meshes": {
+    "Khan_Garment_Body": {
+      "verts": 153993,
+      "polys": 288368,
+      "groups": 34,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Khan_Working_Material.001"
+      ],
+      "seam_verts": 547
+    },
+    "Kameez_Front_Panel": {
+      "verts": 1186,
+      "polys": 1210,
+      "groups": 7,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Khan_Working_Material.001"
+      ],
+      "seam_verts": 0
+    },
+    "Kameez_Back_Panel": {
+      "verts": 1301,
+      "polys": 1268,
+      "groups": 14,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Khan_Working_Material.001"
+      ],
+      "seam_verts": 0
+    }
+  },
+  "source": "Garment_Trial_PreCut_Backup",
+  "pose_enum": [
+    "POSE",
+    "REST"
+  ],
+  "export_enums": {
+    "export_format": [],
+    "export_animation_mode": [
+      "ACTIONS",
+      "ACTIVE_ACTIONS",
+      "BROADCAST",
+      "NLA_TRACKS",
+      "SCENE"
+    ]
+  }
+}

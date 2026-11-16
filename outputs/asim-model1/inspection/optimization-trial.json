@@ -1,0 +1,52 @@
+{
+  "source_triangles": 1957791,
+  "trial_triangles": 152001,
+  "trial_vertices": 76001,
+  "triangle_reduction_percent": 92.24,
+  "target_ratio": 0.07764,
+  "dimensions_m": [
+    1.362196,
+    0.380307,
+    1.799966
+  ],
+  "uv_layers": [
+    "UVMap"
+  ],
+  "boundary_edges": 2,
+  "nonmanifold_edges": 3,
+  "region_triangle_counts": {
+    "footwear (z<0.16)": 16055,
+    "legs (0.16..0.75)": 22758,
+    "torso_tunic (0.75..1.48, |x|<0.47)": 68926,
+    "hands_5fingers (z<1.08, |x|>=0.47)": 16631,
+    "head_cap (z>=1.48)": 27599
+  },
+  "images": [
+    {
+      "name": "Asim_Working_basecolor",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "Asim_Working_normal",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "Asim_Working_rm",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    }
+  ],
+  "method": "Targeted weighted Decimate collapse preserving face/cap, 5-fingered hands, medals/belt/sash, shoulders/knees, and footwear while collapsing high-density uniform cloth.",
+  "blend_saved": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model1\\blender\\asim-model1-optimization-trial.blend"
+}

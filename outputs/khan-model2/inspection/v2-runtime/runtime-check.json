@@ -1,0 +1,37 @@
+{
+  "clips": [
+    {
+      "frames_exercised": 100,
+      "length": 8.36666679382324,
+      "max_world_point_magnitude": 1.06801187992096,
+      "name": "Idle",
+      "solver_samples": 101
+    },
+    {
+      "frames_exercised": 100,
+      "length": 2.0,
+      "max_world_point_magnitude": 1.06643605232239,
+      "name": "Idle2",
+      "solver_samples": 101
+    },
+    {
+      "frames_exercised": 100,
+      "length": 1.06666672229767,
+      "max_world_point_magnitude": 1.00053036212921,
+      "name": "Punch",
+      "solver_samples": 101
+    },
+    {
+      "frames_exercised": 100,
+      "length": 1.63333332538605,
+      "max_world_point_magnitude": 1.44265484809875,
+      "name": "MmaKick",
+      "solver_samples": 101
+    }
+  ],
+  "cloth_enabled": true,
+  "control_grid": "two 5x6 panels",
+  "finite_poses": true,
+  "metric": "world point magnitude, not sway amplitude",
+  "performance_benchmark": false
+}

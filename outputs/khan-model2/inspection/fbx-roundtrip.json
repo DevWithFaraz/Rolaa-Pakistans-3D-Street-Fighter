@@ -1,0 +1,48 @@
+{
+  "objects": [
+    {
+      "name": "Khan_Model2_Working.001",
+      "type": "MESH",
+      "dimensions_m": [
+        0.8936280012130737,
+        0.3316948115825653,
+        1.800034999847412
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "vertices": 75911,
+      "triangles": 151826,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "texture_images": [
+        {
+          "name": "Khan_Working_kurta_pajama_3d_model_basecolor.001",
+          "size": [
+            2048,
+            2048
+          ],
+          "source_path": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\khan-model2\\mixamo\\Khan_Model2_Rigging_Trial.fbm\\Khan_Working_kurta_pajama_3d_model_basecolor.jpg"
+        },
+        {
+          "name": "Khan_Working_kurta_pajama_3d_model_normal.001",
+          "size": [
+            2048,
+            2048
+          ],
+          "source_path": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\khan-model2\\mixamo\\Khan_Model2_Rigging_Trial.fbm\\Khan_Working_kurta_pajama_3d_model_normal.jpg"
+        }
+      ]
+    }
+  ],
+  "armatures": 0,
+  "passed": true
+}

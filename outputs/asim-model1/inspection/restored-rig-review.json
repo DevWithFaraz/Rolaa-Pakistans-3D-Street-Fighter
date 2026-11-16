@@ -1,0 +1,50 @@
+{
+  "triangles": 284999,
+  "vertices": 142500,
+  "exact_weight_copies": 36143,
+  "max_interpolation_distance_m": 0.004552,
+  "unweighted_vertices": 0,
+  "max_weight_sum_error": 3.3306690738754696e-16,
+  "skeleton_bones": 65,
+  "finger_chains_per_hand": [
+    "thumb",
+    "index",
+    "middle",
+    "ring",
+    "pinky"
+  ],
+  "rigid_cap_lock_z_m": 1.595,
+  "footwear_protection_z_m": 0.2,
+  "dimensions_m": [
+    1.318706,
+    0.380414,
+    1.799984
+  ],
+  "pbr_images": [
+    {
+      "name": "Asim_Working_basecolor",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "Asim_Working_rm",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "Asim_Working_normal",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    }
+  ],
+  "blend_saved": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model1\\blender\\asim-model1-restored-rig.blend"
+}

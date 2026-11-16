@@ -1,0 +1,13 @@
+{
+  "before": {
+    "vertices": 2472,
+    "faces": 2524,
+    "boundary": 1710
+  },
+  "after": {
+    "vertices": 2361,
+    "faces": 2516,
+    "boundary": 1501,
+    "nonmanifold": 16
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "clips": [
+    {
+      "clip": "Idle",
+      "frames": 251,
+      "max_control_edge_stretch": 1.1279176206237311
+    },
+    {
+      "clip": "Idle2",
+      "frames": 60,
+      "max_control_edge_stretch": 1.1297302631787913
+    },
+    {
+      "clip": "Punch",
+      "frames": 32,
+      "max_control_edge_stretch": 1.1819509863587159
+    },
+    {
+      "clip": "MmaKick",
+      "frames": 49,
+      "max_control_edge_stretch": 1.2859743964577646
+    }
+  ],
+  "refitted_artificial_upper_trouser_vertices": 5039,
+  "uv_unchanged": true,
+  "status": "Awaiting visual acceptance; baked capsule cage, not runtime cloth"
+}

@@ -1,0 +1,12 @@
+{
+  "front": {
+    "vertices": 1186,
+    "faces": 1210,
+    "uv_preserved": true
+  },
+  "back": {
+    "vertices": 1301,
+    "faces": 1268,
+    "uv_preserved": true
+  }
+}

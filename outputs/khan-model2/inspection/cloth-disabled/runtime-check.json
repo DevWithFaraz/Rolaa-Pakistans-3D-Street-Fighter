@@ -1,0 +1,27 @@
+{
+  "bone_count": 59,
+  "clips": [
+    {
+      "length": 8.36666679382324,
+      "max_modified_tip_displacement_from_animated_rest": 0.0,
+      "name": "Idle"
+    },
+    {
+      "length": 2.0,
+      "max_modified_tip_displacement_from_animated_rest": 0.0,
+      "name": "Idle2"
+    },
+    {
+      "length": 1.06666672229767,
+      "max_modified_tip_displacement_from_animated_rest": 0.0,
+      "name": "Punch"
+    },
+    {
+      "length": 1.63333332538605,
+      "max_modified_tip_displacement_from_animated_rest": 0.0,
+      "name": "MmaKick"
+    }
+  ],
+  "finite_poses": true,
+  "spring_settings": 2
+}

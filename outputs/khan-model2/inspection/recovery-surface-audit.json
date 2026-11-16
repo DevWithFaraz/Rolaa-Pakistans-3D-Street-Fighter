@@ -1,0 +1,70 @@
+{
+  "note": "Geometric diagnostic only; visual acceptance still required. Excludes waist join above 0.98m.",
+  "samples": [
+    {
+      "clip": "Idle2",
+      "frame": 1,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "Idle2",
+      "frame": 30,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "Idle2",
+      "frame": 60,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "Punch",
+      "frame": 1,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "Punch",
+      "frame": 12,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "Punch",
+      "frame": 24,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "Punch",
+      "frame": 32,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 1,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 10,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 18,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 26,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 36,
+      "overlapping_garment_trouser_face_pairs": 0
+    },
+    {
+      "clip": "MmaKick",
+      "frame": 49,
+      "overlapping_garment_trouser_face_pairs": 0
+    }
+  ]
+}

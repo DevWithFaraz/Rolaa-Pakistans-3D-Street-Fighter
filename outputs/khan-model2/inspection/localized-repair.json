@@ -1,0 +1,10 @@
+{
+  "repair_removed_faces": 462,
+  "repair_surface_fraction": 0.0006059028125159864,
+  "patches_filled": 32,
+  "remaining_nonmanifold_edges": 103,
+  "remaining_boundary_edges": 103,
+  "faces": 474193,
+  "vertices": 237134,
+  "applied": false
+}

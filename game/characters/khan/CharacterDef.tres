@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="CharacterDef" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_def.gd" id="1_chardef"]
+[ext_resource type="Resource" path="res://characters/khan/moves/punch.tres" id="2_punch"]
+[ext_resource type="Resource" path="res://characters/khan/moves/kick.tres" id="3_kick"]
+
+[resource]
+script = ExtResource("1_chardef")
+id = "khan"
+display_name = "KHAN SAHAB"
+archetype = "Kaptaan"
+model_path = "res://assets/characters/khan_recovery_trial.glb"
+model_scale = 1.95
+model_yaw_rad = 1.5707964
+xfade_time = 0.06
+walk_speed = 4.8
+jump_speed = 8.0
+max_health = 100
+clip_map = {
+"guard": &"Idle2",
+"idle": &"Idle",
+"kick": &"MmaKick",
+"punch": &"Punch"
+}
+loop_clips = PackedStringArray("Idle", "Idle2")
+moves = {
+"kick": ExtResource("3_kick"),
+"punch": ExtResource("2_punch")
+}
+voice_bank = {}

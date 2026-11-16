@@ -1,0 +1,24 @@
+[
+  {
+    "side": "Right",
+    "distal_components": [
+      184,
+      684,
+      453,
+      703,
+      880,
+      51,
+      75
+    ]
+  },
+  {
+    "side": "Left",
+    "distal_components": [
+      483,
+      760,
+      689,
+      889,
+      197
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "source_triangles": 474548,
+  "trial_triangles": 151826,
+  "trial_vertices": 75911,
+  "triangle_reduction_percent": 68.01,
+  "protected_vertices_checked": 54168,
+  "maximum_protected_vertex_displacement_m": 0.0,
+  "dimensions_m": [
+    0.8936280012130737,
+    0.3316948115825653,
+    1.800034999847412
+  ],
+  "uv_layers": [
+    "UVMap"
+  ],
+  "boundary_edges": 88,
+  "edges_with_more_than_two_faces": 88,
+  "images": [
+    {
+      "name": "Khan_Working_kurta_pajama_3d_model_basecolor",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "filepath": "",
+      "packed_sha256": "35708a222636908e772cc7f6447cbfd9ddbb50fb0e5e50d04c0f8f910742b3af"
+    },
+    {
+      "name": "Khan_Working_kurta_pajama_3d_model_rm",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "filepath": "",
+      "packed_sha256": "95729bd285e51161c6aec56c5940c3e668002d566ef3cdd1ffe86d56b610df0c"
+    },
+    {
+      "name": "Khan_Working_kurta_pajama_3d_model_normal",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "filepath": "",
+      "packed_sha256": "13cbe367a98963f0400fdf51a6a579b919e614e881f28bb9550c58bed40f1a65"
+    }
+  ],
+  "rigging_tested": false,
+  "game_performance_tested": false,
+  "method": "Reversible Decimate collapse modifier, ratio .32; zero reduction weights on head and hands; weighted shoulder/knee/transition regions."
+}

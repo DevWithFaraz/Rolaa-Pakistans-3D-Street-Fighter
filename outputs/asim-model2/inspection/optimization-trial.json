@@ -1,0 +1,116 @@
+{
+  "source_triangles_after_apose": 1924824,
+  "trial_triangles": 152000,
+  "trial_vertices": 76009,
+  "triangle_reduction_percent": 92.1,
+  "target_ratio": 0.078968,
+  "abduction_deg_per_arm": 36.0,
+  "max_armpit_edge_growth_m": 0.0101,
+  "armpit_caps_boundary_edges": 32,
+  "armpit_caps_nonmanifold_edges": 32,
+  "dimensions_m": [
+    1.373572,
+    0.379354,
+    1.800014
+  ],
+  "uv_layers": [
+    "UVMap"
+  ],
+  "boundary_edges": 28,
+  "nonmanifold_edges": 28,
+  "region_triangle_counts": {
+    "footwear (z<0.16)": 20625,
+    "legs (0.16..0.75)": 21530,
+    "torso_tunic (0.75..1.46, |x|<0.47)": 65837,
+    "arms_hands_abducted (z<1.12, |x|>=0.45)": 13813,
+    "head_cap (z>=1.46)": 28560,
+    "shoulders_upper_sleeves_other": 1635
+  },
+  "landmarks_world": {
+    "chin": [
+      -0.0003,
+      -0.1014,
+      1.5092
+    ],
+    "wrist_char_left_posX": [
+      0.6081,
+      -0.0258,
+      0.9701
+    ],
+    "wrist_char_right_negX": [
+      -0.6101,
+      -0.0255,
+      0.9717
+    ],
+    "elbow_char_left_posX": [
+      0.4134,
+      0.0453,
+      1.1946
+    ],
+    "elbow_char_right_negX": [
+      -0.4149,
+      0.0458,
+      1.1957
+    ],
+    "knee_char_left_posX": [
+      0.1504,
+      0.0465,
+      0.4752
+    ],
+    "knee_char_right_negX": [
+      -0.1509,
+      0.0475,
+      0.4752
+    ],
+    "groin": [
+      0.0,
+      -0.02,
+      0.86
+    ]
+  },
+  "ortho_camera": {
+    "loc": [
+      0.0,
+      -3.5,
+      0.9
+    ],
+    "tgt": [
+      0.0,
+      0.0,
+      0.9
+    ],
+    "ortho_scale": 1.98,
+    "res": [
+      1200,
+      1600
+    ]
+  },
+  "images": [
+    {
+      "name": "Asim2_Working_basecolor",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "Asim2_Working_normal",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "Asim2_Working_rm",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    }
+  ],
+  "method": "Surgical medial armpit seam release + 36deg A-pose abduction + targeted PreserveDetail Decimate collapse preserving face/cap, 5-fingered hands, medals/belt/sash, shoulders/knees, and boots.",
+  "blend_saved": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model2\\blender\\asim-model2-optimization-trial.blend"
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "Original": "C:\\Users\\IT\\Downloads\\Asim Jani 3D model.glb",
+    "PreservedCopy": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model1\\source\\asim-model1-original.glb",
+    "SHA256": "8DF55B5954BA032A7A8AF0F16CBF541AF476E0569D627E52430CBA4B739DAA1A",
+    "Bytes": 19539000,
+    "VerifiedIdentical": true,
+    "Notes": "Uses KHR_mesh_quantization and EXT_meshopt_compression; unpacked losslessly for Blender 4.5 to asim-model1-uncompressed.glb"
+  },
+  {
+    "UnpackedFrom": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model1\\source\\asim-model1-original.glb",
+    "UnpackedCopy": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model1\\source\\asim-model1-uncompressed.glb",
+    "Method": "@gltf-transform dequantize + meshoptimizer decode (EXT_meshopt_compression removed for Blender 4.5 import)"
+  }
+]

@@ -1,0 +1,11 @@
+Use the attached Khan Sahab character sheet as the identity and costume reference. Create ONE full-body, straight-on front view of that same character for 3D modeling.
+
+Preserve his recognizable face, age, hairstyle, natural body proportions, cream shalwar kameez, long tunic with side slits, and brown sandals. Maintain the reference's stylized realism. Keep the face neutral and looking straight ahead.
+
+Place him in a symmetrical A-pose: standing upright, arms extended diagonally down and away from the torso about 45 degrees, elbows straight, hands open with naturally separated fingers, legs slightly apart, both feet flat and pointing forward. Keep clear visible space between the arms and clothing and between the lower legs. Keep the tunic's intended length and silhouette.
+
+Show the entire character, including hair, fingertips, and sandals, with a small margin around all sides. Use an orthographic-style front camera, even soft studio lighting, and a plain light-gray background. Preserve readable facial features and clothing forms.
+
+One character only. No turnaround collage, extra portrait, labels, text, props, pedestal, fighting pose, dramatic perspective, hard cast shadows, or scenery.
+
+This prompt is for the IMAGE EDITING/GENERATION tool, using the existing sheet as a reference. Review the result for identity and pose consistency before uploading it to an image-to-3D service.

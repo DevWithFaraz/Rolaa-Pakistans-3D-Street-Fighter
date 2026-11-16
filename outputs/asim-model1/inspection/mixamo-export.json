@@ -1,0 +1,31 @@
+{
+  "export": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model1\\mixamo\\Asim_Model1_Rigging_Trial.fbx",
+  "bytes": 6611628,
+  "result": [
+    "FINISHED"
+  ],
+  "textures": [
+    {
+      "path": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model1\\textures\\Asim_Working_basecolor.jpg",
+      "sha256": "916976e7946c9f21c933c53fb412f18daddf620b13a7b6873fe071cd3d5e9cf8",
+      "bytes": 1376113
+    },
+    {
+      "path": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model1\\textures\\Asim_Working_rm.jpg",
+      "sha256": "74d3d0052c9636e009476b8fffcf2e473a60e13a1d228e3bf9ffb37e8cc483b7",
+      "bytes": 722930
+    },
+    {
+      "path": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model1\\textures\\Asim_Working_normal.jpg",
+      "sha256": "8be90703aaf820cdf0c1ca33d196a591f3bcbc6cac47c37cfc7b789e367cea8b",
+      "bytes": 900948
+    }
+  ],
+  "animation_included": false,
+  "rig_included": false,
+  "object_names": [
+    "Asim_Model1_Optimization_Trial"
+  ],
+  "triangles": 152001,
+  "vertices": 76001
+}

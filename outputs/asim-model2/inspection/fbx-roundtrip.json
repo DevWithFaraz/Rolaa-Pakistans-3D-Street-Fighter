@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "fbx_path": "C:\\Users\\IT\\Documents\\Codex\\2026-09-14\\it-s-time-to-get-serious\\outputs\\asim-model2\\mixamo\\Asim_Model2_Rigging_Trial.fbx",
+  "meshes": 1,
+  "armatures": 0,
+  "triangles": 152000,
+  "vertices": 76009,
+  "dimensions_m": [
+    1.373572,
+    0.379354,
+    1.800014
+  ],
+  "rotation_euler": [
+    -0.0,
+    0.0,
+    0.0
+  ],
+  "fbx_axes": {
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1
+  },
+  "head_y_range": [
+    -0.1717,
+    0.147
+  ],
+  "uv_layers": [
+    "UVMap"
+  ],
+  "materials": [
+    "Asim2_Working_Material"
+  ],
+  "images": [
+    {
+      "name": "Asim2_Working_basecolor",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "Asim2_Working_normal",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    }
+  ]
+}

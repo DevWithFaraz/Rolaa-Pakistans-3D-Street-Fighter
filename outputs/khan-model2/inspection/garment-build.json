@@ -1,0 +1,64 @@
+{
+  "panel_vertices_each": 825,
+  "panel_quads_each": 768,
+  "chains": [
+    {
+      "side": "front",
+      "column": "R",
+      "bones": [
+        "cloth_front_R_0",
+        "cloth_front_R_1",
+        "cloth_front_R_2"
+      ]
+    },
+    {
+      "side": "front",
+      "column": "C",
+      "bones": [
+        "cloth_front_C_0",
+        "cloth_front_C_1",
+        "cloth_front_C_2"
+      ]
+    },
+    {
+      "side": "front",
+      "column": "L",
+      "bones": [
+        "cloth_front_L_0",
+        "cloth_front_L_1",
+        "cloth_front_L_2"
+      ]
+    },
+    {
+      "side": "back",
+      "column": "R",
+      "bones": [
+        "cloth_back_R_0",
+        "cloth_back_R_1",
+        "cloth_back_R_2"
+      ]
+    },
+    {
+      "side": "back",
+      "column": "C",
+      "bones": [
+        "cloth_back_C_0",
+        "cloth_back_C_1",
+        "cloth_back_C_2"
+      ]
+    },
+    {
+      "side": "back",
+      "column": "L",
+      "bones": [
+        "cloth_back_L_0",
+        "cloth_back_L_1",
+        "cloth_back_L_2"
+      ]
+    }
+  ],
+  "top_m": 1.043,
+  "hem_m": 0.578,
+  "removed_band_faces": 15275,
+  "status": "Geometry/control prototype; dynamics and collision still to be tested."
+}

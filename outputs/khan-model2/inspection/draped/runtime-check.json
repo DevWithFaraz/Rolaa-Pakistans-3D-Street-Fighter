@@ -1,0 +1,27 @@
+{
+  "bone_count": 239,
+  "clips": [
+    {
+      "clip": "Idle",
+      "frames_checked": 253,
+      "length": 8.36666679382324
+    },
+    {
+      "clip": "Idle2",
+      "frames_checked": 61,
+      "length": 2.0
+    },
+    {
+      "clip": "Punch",
+      "frames_checked": 34,
+      "length": 1.06666672229767
+    },
+    {
+      "clip": "MmaKick",
+      "frames_checked": 50,
+      "length": 1.63333332538605
+    }
+  ],
+  "finite_bone_transforms": true,
+  "visual_acceptance": false
+}
