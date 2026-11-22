@@ -1,0 +1,27 @@
+character,move_id,display_name,clip,hit_level,tracking,startup,active,recovery,total,damage,on_hit,on_block,properties
+KHAN SAHAB,command_heavy,Yorker Overhead (f+2),Punch,mid,homing,14,4,20,38,20,+7,-4,wall_splat
+KHAN SAHAB,crouch_jab,Crouch Gut Punch (d+1),Punch,mid,linear,7,3,13,23,8,+3,-2,-
+KHAN SAHAB,heavy_punch,Right Cross (2),Punch,mid,linear,9,3,17,29,14,+4,-3,cancels:kick
+KHAN SAHAB,kick,Heavy Kick (4),MmaKick,mid,linear,12,4,22,38,17,+3,-5,-
+KHAN SAHAB,launcher,Sky Upper (df+2),Punch,mid,linear,14,4,24,42,15,+14,-8,launcher
+KHAN SAHAB,light_combo,Twin Jab (1,1),Punch,high,linear,5,3,14,22,8,+4,-2,cancels:heavy_punch
+KHAN SAHAB,low_sweep,Chappal Sweep (d+3),MmaKick,low,linear,15,4,26,45,16,+4,-4,knockdown
+KHAN SAHAB,power_kick,Kaptaan Roundhouse (b+4),MmaKick,mid,homing,15,5,24,44,22,+5,-6,wall_splat
+KHAN SAHAB,punch,Left Jab (1),Punch,high,linear,6,3,14,23,10,+4,-2,cancels:light_combo,heavy_punch
+KHAN SAHAB,quick_kick,Low Shin Kick (3),MmaKick,low,linear,10,3,18,31,11,+1,-5,-
+KHAN SAHAB,signature,Bouncer Blitz (1+2),Punch,mid,linear,13,5,22,40,24,+10,-4,knockdown;wall_splat
+KHAN SAHAB,super_jalwa,Kaptaan Jalwa (JOSH),MmaKick,mid,homing,11,6,26,43,34,+14,-6,knockdown;wall_splat;chip:8
+KHAN SAHAB,throw_front,Pakad Throw (1+3),Punch,throw,linear,10,3,22,35,22,+8,-22,knockdown
+ASIM JANI,command_heavy,Iron Headbutt (f+2),Headbutt,mid,homing,14,4,20,38,20,+7,-4,wall_splat
+ASIM JANI,crouch_jab,Crouch Gut Punch (d+1),Punch,mid,linear,7,3,13,23,8,+3,-2,-
+ASIM JANI,heavy_punch,Right Cross (2),Punch,mid,linear,9,3,17,29,14,+4,-3,cancels:kick
+ASIM JANI,kick,Heavy Kick (4),MmaKick,mid,linear,12,4,22,38,17,+3,-5,-
+ASIM JANI,launcher,Rising Boot (df+2),MmaKick,mid,linear,14,4,24,42,15,+14,-8,launcher
+ASIM JANI,light_combo,Twin Jab (1,1),Punch,high,linear,5,3,14,22,8,+4,-2,cancels:heavy_punch
+ASIM JANI,low_sweep,Chappal Sweep (d+3),MmaKick,low,linear,15,4,26,45,16,+4,-4,knockdown
+ASIM JANI,power_kick,Commander Roundhouse (b+4),RoundhouseKick,mid,homing,15,5,24,44,22,+5,-6,wall_splat
+ASIM JANI,punch,Left Jab (1),Punch,high,linear,6,3,14,23,10,+4,-2,cancels:light_combo,heavy_punch
+ASIM JANI,quick_kick,Low Shin Kick (3),MmaKick,low,linear,10,3,18,31,11,+1,-5,-
+ASIM JANI,signature,Salute & Strike (1+2),QuadPunch,mid,linear,13,5,22,40,24,+10,-4,knockdown;wall_splat;armour:1
+ASIM JANI,super_jalwa,Commander Jalwa (JOSH),QuadPunch,mid,homing,11,6,26,43,34,+14,-6,knockdown;wall_splat;chip:8
+ASIM JANI,throw_front,Pakad Throw (1+3),Punch,throw,linear,10,3,22,35,22,+8,-22,knockdown

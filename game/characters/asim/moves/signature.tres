@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_hhgan"]
+
+[resource]
+script = ExtResource("1_hhgan")
+id = "signature"
+display_name = "Salute & Strike (1+2)"
+animation_clip = &"QuadPunch"
+startup_ticks = 20
+active_ticks = 6
+recovery_ticks = 32
+damage = 24
+reach = 2.35
+box_low = 1.3
+box_height = 1.1
+knockback = 9.2
+hitstun_ticks = 32
+blockstun_ticks = 18
+hitstop_ticks = 9
+knockdown = true
+wall_splat = true
+armour_hits = 1
+advance_speed = 3.0
+clip_start_sec = 0.06
+contact_start_sec = 0.75
+contact_end_sec = 1.05
+clip_end_sec = 2.05

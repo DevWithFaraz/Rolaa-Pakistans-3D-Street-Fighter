@@ -1,0 +1,46 @@
+{
+  "pistol": {
+    "glb_bytes": 436972,
+    "meshes": 1,
+    "primitives": 6,
+    "materials": [
+      "M1911_Grip",
+      "M1911_Slide",
+      "M1911_Frame",
+      "M1911_Barrel",
+      "M1911_Ammo",
+      "M1911_Mag"
+    ],
+    "nodes": [
+      "MuzzlePoint",
+      "M1911"
+    ],
+    "has_custom_normals": true,
+    "tris": 12080,
+    "dimensions_m": [
+      0.0324,
+      0.2327,
+      0.1443
+    ]
+  },
+  "bullet": {
+    "glb_bytes": 25964,
+    "meshes": 1,
+    "primitives": 1,
+    "materials": [
+      "Bullet45ACPMat"
+    ],
+    "nodes": [
+      "Bullet45ACP"
+    ],
+    "nose_was_top_z": true,
+    "mean_top_r": 0.00439,
+    "mean_bot_r": 0.00495,
+    "tris": 736,
+    "dimensions_m": [
+      0.16,
+      0.065,
+      0.065
+    ]
+  }
+}

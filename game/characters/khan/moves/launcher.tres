@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_vtnm6"]
+
+[resource]
+script = ExtResource("1_vtnm6")
+id = "launcher"
+display_name = "Flip Kick Launcher (df+2)"
+animation_clip = &"FlipKick"
+startup_ticks = 18
+active_ticks = 5
+recovery_ticks = 32
+damage = 15
+reach = 2.1
+box_low = 1.2
+box_height = 1.25
+knockback = 2.2
+hitstun_ticks = 38
+blockstun_ticks = 16
+hitstop_ticks = 8
+launcher = true
+advance_speed = 1.4
+clip_start_sec = 0.42
+contact_start_sec = 0.9
+contact_end_sec = 1.15
+clip_end_sec = 1.72

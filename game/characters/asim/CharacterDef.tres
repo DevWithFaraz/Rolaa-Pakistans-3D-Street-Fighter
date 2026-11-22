@@ -1,34 +1,76 @@
-[gd_resource type="Resource" script_class="CharacterDef" load_steps=4 format=3]
+[gd_resource type="Resource" script_class="CharacterDef" format=3]
 
-[ext_resource type="Script" path="res://scripts/character_def.gd" id="1_chardef"]
-[ext_resource type="Resource" path="res://characters/asim/moves/punch.tres" id="2_punch"]
-[ext_resource type="Resource" path="res://characters/asim/moves/kick.tres" id="3_kick"]
+[ext_resource type="Resource" path="res://characters/asim/moves/punch.tres" id="1_fo3p8"]
+[ext_resource type="Resource" path="res://characters/asim/moves/light_combo.tres" id="2_okstj"]
+[ext_resource type="Resource" path="res://characters/asim/moves/heavy_punch.tres" id="3_0t1rd"]
+[ext_resource type="Resource" path="res://characters/asim/moves/quick_kick.tres" id="4_aymvx"]
+[ext_resource type="Resource" path="res://characters/asim/moves/kick.tres" id="5_aq1sr"]
+[ext_resource type="Resource" path="res://characters/asim/moves/crouch_jab.tres" id="6_0m4ew"]
+[ext_resource type="Resource" path="res://characters/asim/moves/low_sweep.tres" id="7_gkey1"]
+[ext_resource type="Resource" path="res://characters/asim/moves/launcher.tres" id="8_1qe8x"]
+[ext_resource type="Resource" path="res://characters/asim/moves/command_heavy.tres" id="9_375pr"]
+[ext_resource type="Resource" path="res://characters/asim/moves/power_kick.tres" id="10_lmdhe"]
+[ext_resource type="Resource" path="res://characters/asim/moves/throw_front.tres" id="11_yrny8"]
+[ext_resource type="Resource" path="res://characters/asim/moves/signature.tres" id="12_1jwqh"]
+[ext_resource type="Resource" path="res://characters/asim/moves/super_jalwa.tres" id="13_hs7wp"]
+[ext_resource type="Resource" path="res://characters/asim/moves/air_punch.tres" id="14_aymvx"]
+[ext_resource type="Script" path="res://scripts/character_def.gd" id="14_vu22v"]
+[ext_resource type="Resource" path="res://characters/asim/moves/air_kick.tres" id="15_aq1sr"]
+[ext_resource type="Resource" path="res://characters/asim/moves/pistol_shoot.tres" id="16_0m4ew"]
 
 [resource]
-script = ExtResource("1_chardef")
+script = ExtResource("14_vu22v")
 id = "asim"
 display_name = "ASIM JANI"
 archetype = "Commander"
 model_path = "res://assets/characters/asim_model1.glb"
-model_scale = 1.95
-model_yaw_rad = 1.5707964
-xfade_time = 0.06
-walk_speed = 4.8
-jump_speed = 8.0
-max_health = 100
 clip_map = {
+"backdash": &"Backdash",
+"block_hit": &"BlockHit",
+"crouch": &"CrouchIdle",
+"crouch_walk": &"CrouchWalk",
+"crouch_walk_back": &"CrouchWalkBack",
+"dash_forward": &"DashForward",
+"entry": &"Entry",
 "guard": &"Idle2",
 "headbutt": &"Headbutt",
+"hit_body": &"HitBody",
+"hit_head": &"HitHead",
 "idle": &"Idle",
+"jump": &"Jump",
 "kick": &"MmaKick",
-"punch": &"Punch",
+"knockdown": &"SweepFall",
+"ko": &"KnockdownDeath",
+"punch": &"JabLeft",
 "quad_punch": &"QuadPunch",
 "roundhouse_kick": &"RoundhouseKick",
-"walk": &"Walk"
+"sidestep": &"Sidestep",
+"taunt": &"Taunt",
+"turn_180": &"Turn180",
+"victory": &"VictoryCelebrate",
+"wakeup": &"WakeupStand",
+"walk": &"Walk",
+"walk_back": &"WalkBack"
 }
-loop_clips = PackedStringArray("Idle", "Idle2", "Walk")
+loop_clips = PackedStringArray("Idle", "Idle2", "Walk", "WalkBack", "CrouchIdle", "CrouchWalk", "CrouchWalkBack", "VictoryCelebrate")
 moves = {
-"kick": ExtResource("3_kick"),
-"punch": ExtResource("2_punch")
+"air_kick": ExtResource("15_aq1sr"),
+"air_punch": ExtResource("14_aymvx"),
+"command_heavy": ExtResource("9_375pr"),
+"crouch_jab": ExtResource("6_0m4ew"),
+"heavy_punch": ExtResource("3_0t1rd"),
+"kick": ExtResource("5_aq1sr"),
+"launcher": ExtResource("8_1qe8x"),
+"light_combo": ExtResource("2_okstj"),
+"low_sweep": ExtResource("7_gkey1"),
+"pistol_shoot": ExtResource("16_0m4ew"),
+"power_kick": ExtResource("10_lmdhe"),
+"punch": ExtResource("1_fo3p8"),
+"quick_kick": ExtResource("4_aymvx"),
+"signature": ExtResource("12_1jwqh"),
+"super_jalwa": ExtResource("13_hs7wp"),
+"throw_front": ExtResource("11_yrny8")
 }
-voice_bank = {}
+voice_bank = {
+"taunt": "res://assets/audio/asim_taunt_salute.ogg"
+}

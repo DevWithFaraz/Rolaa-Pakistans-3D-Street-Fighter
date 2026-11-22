@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_ih0o6"]
+
+[resource]
+script = ExtResource("1_ih0o6")
+id = "rock_throw"
+display_name = "Patthar Throw (1+3)"
+animation_clip = &"ThrowRock"
+startup_ticks = 44
+active_ticks = 4
+recovery_ticks = 32
+damage = 18
+reach = 10.0
+box_low = 1.6
+box_height = 1.2
+knockback = 8.5
+hitstun_ticks = 34
+blockstun_ticks = 14
+hit_level = "high"
+clip_start_sec = 0.55
+contact_start_sec = 2.42
+contact_end_sec = 2.52
+clip_end_sec = 3.25

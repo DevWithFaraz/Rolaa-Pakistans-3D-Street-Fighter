@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_3a2ek"]
+
+[resource]
+script = ExtResource("1_3a2ek")
+id = "light_combo"
+display_name = "Twin Jab (1,1)"
+animation_clip = &"JabCross"
+startup_ticks = 5
+damage = 8
+reach = 1.85
+knockback = 4.0
+hit_level = "high"
+cancel_routes = {
+"rp": "heavy_punch"
+}
+clip_start_sec = 0.55
+contact_start_sec = 0.85
+contact_end_sec = 1.15
+clip_end_sec = 1.55

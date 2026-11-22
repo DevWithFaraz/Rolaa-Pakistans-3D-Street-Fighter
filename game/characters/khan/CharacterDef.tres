@@ -1,30 +1,73 @@
-[gd_resource type="Resource" script_class="CharacterDef" load_steps=4 format=3]
+[gd_resource type="Resource" script_class="CharacterDef" format=3]
 
-[ext_resource type="Script" path="res://scripts/character_def.gd" id="1_chardef"]
-[ext_resource type="Resource" path="res://characters/khan/moves/punch.tres" id="2_punch"]
-[ext_resource type="Resource" path="res://characters/khan/moves/kick.tres" id="3_kick"]
+[ext_resource type="Resource" path="res://characters/khan/moves/punch.tres" id="1_k426f"]
+[ext_resource type="Resource" path="res://characters/khan/moves/light_combo.tres" id="2_jjjco"]
+[ext_resource type="Resource" path="res://characters/khan/moves/heavy_punch.tres" id="3_veuq4"]
+[ext_resource type="Resource" path="res://characters/khan/moves/quick_kick.tres" id="4_do4lx"]
+[ext_resource type="Resource" path="res://characters/khan/moves/kick.tres" id="5_anwte"]
+[ext_resource type="Resource" path="res://characters/khan/moves/crouch_jab.tres" id="6_lxgtw"]
+[ext_resource type="Resource" path="res://characters/khan/moves/low_sweep.tres" id="7_qjsyo"]
+[ext_resource type="Resource" path="res://characters/khan/moves/launcher.tres" id="8_trnhm"]
+[ext_resource type="Resource" path="res://characters/khan/moves/command_heavy.tres" id="9_1pxqx"]
+[ext_resource type="Resource" path="res://characters/khan/moves/power_kick.tres" id="10_dymep"]
+[ext_resource type="Resource" path="res://characters/khan/moves/throw_front.tres" id="11_2sfhr"]
+[ext_resource type="Resource" path="res://characters/khan/moves/signature.tres" id="12_r34au"]
+[ext_resource type="Resource" path="res://characters/khan/moves/super_jalwa.tres" id="13_ligjf"]
+[ext_resource type="Resource" path="res://characters/khan/moves/rock_throw.tres" id="14_dy1wu"]
+[ext_resource type="Resource" path="res://characters/khan/moves/air_punch.tres" id="14_veuq4"]
+[ext_resource type="Script" path="res://scripts/character_def.gd" id="15_bktm2"]
+[ext_resource type="Resource" path="res://characters/khan/moves/air_kick.tres" id="15_do4lx"]
 
 [resource]
-script = ExtResource("1_chardef")
+script = ExtResource("15_bktm2")
 id = "khan"
 display_name = "KHAN SAHAB"
 archetype = "Kaptaan"
 model_path = "res://assets/characters/khan_recovery_trial.glb"
-model_scale = 1.95
-model_yaw_rad = 1.5707964
-xfade_time = 0.06
-walk_speed = 4.8
-jump_speed = 8.0
-max_health = 100
 clip_map = {
+"backdash": &"Backdash",
+"block_hit": &"BlockHit",
+"crouch": &"CrouchIdle",
+"crouch_walk": &"CrouchWalk",
+"crouch_walk_back": &"CrouchWalkBack",
+"dash_forward": &"DashForward",
+"entry": &"Entry",
 "guard": &"Idle2",
+"hit_body": &"HitBody",
+"hit_head": &"HitHead",
 "idle": &"Idle",
+"jump": &"Jump",
 "kick": &"MmaKick",
-"punch": &"Punch"
+"knockdown": &"SweepFall",
+"ko": &"KnockdownDeath",
+"punch": &"Punch",
+"sidestep": &"Sidestep",
+"taunt": &"Taunt",
+"turn_180": &"Turn180",
+"victory": &"VictoryCelebrate",
+"wakeup": &"WakeupStand",
+"walk": &"Walk",
+"walk_back": &"WalkBack"
 }
-loop_clips = PackedStringArray("Idle", "Idle2")
+loop_clips = PackedStringArray("Idle", "Idle2", "Walk", "WalkBack", "CrouchIdle", "CrouchWalk", "CrouchWalkBack", "VictoryCelebrate")
 moves = {
-"kick": ExtResource("3_kick"),
-"punch": ExtResource("2_punch")
+"air_kick": ExtResource("15_do4lx"),
+"air_punch": ExtResource("14_veuq4"),
+"command_heavy": ExtResource("9_1pxqx"),
+"crouch_jab": ExtResource("6_lxgtw"),
+"heavy_punch": ExtResource("3_veuq4"),
+"kick": ExtResource("5_anwte"),
+"launcher": ExtResource("8_trnhm"),
+"light_combo": ExtResource("2_jjjco"),
+"low_sweep": ExtResource("7_qjsyo"),
+"power_kick": ExtResource("10_dymep"),
+"punch": ExtResource("1_k426f"),
+"quick_kick": ExtResource("4_do4lx"),
+"rock_throw": ExtResource("14_dy1wu"),
+"signature": ExtResource("12_r34au"),
+"super_jalwa": ExtResource("13_ligjf"),
+"throw_front": ExtResource("11_2sfhr")
 }
-voice_bank = {}
+voice_bank = {
+"taunt": "res://assets/audio/khan_taunt_absolutely_not.ogg"
+}

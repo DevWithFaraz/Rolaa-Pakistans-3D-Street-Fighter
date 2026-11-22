@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_pkolq"]
+
+[resource]
+script = ExtResource("1_pkolq")
+id = "super_jalwa"
+display_name = "Kaptaan Jalwa (JOSH)"
+animation_clip = &"JalwaSuper"
+startup_ticks = 11
+active_ticks = 6
+recovery_ticks = 34
+damage = 34
+reach = 2.65
+box_low = 1.0
+box_height = 1.4
+knockback = 11.0
+hitstun_ticks = 40
+blockstun_ticks = 20
+hitstop_ticks = 12
+tracking = "homing"
+knockdown = true
+wall_splat = true
+chip_damage = 8
+advance_speed = 5.0
+josh_cost = 100
+clip_start_sec = 0.2
+contact_start_sec = 1.78
+contact_end_sec = 2.15
+clip_end_sec = 3.25

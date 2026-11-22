@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_tl43y"]
+
+[resource]
+script = ExtResource("1_tl43y")
+id = "low_sweep"
+display_name = "Chappal Sweep (d+3)"
+animation_clip = &"CrescentSweep"
+startup_ticks = 18
+active_ticks = 5
+recovery_ticks = 32
+damage = 16
+reach = 2.25
+box_low = 0.25
+box_height = 0.75
+hitstun_ticks = 30
+blockstun_ticks = 22
+hitstop_ticks = 7
+hit_level = "low"
+knockdown = true
+clip_start_sec = 0.75
+contact_start_sec = 1.32
+contact_end_sec = 1.48
+clip_end_sec = 2.0

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_o10ie"]
+
+[resource]
+script = ExtResource("1_o10ie")
+id = "quick_kick"
+display_name = "Low Shin Kick (3)"
+animation_clip = &"LeftKick"
+startup_ticks = 10
+recovery_ticks = 18
+damage = 11
+reach = 2.05
+box_low = 0.35
+box_height = 0.75
+knockback = 3.8
+hitstun_ticks = 19
+blockstun_ticks = 13
+hit_level = "low"
+clip_start_sec = 0.06
+contact_start_sec = 0.62
+contact_end_sec = 0.72
+clip_end_sec = 1.55

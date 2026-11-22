@@ -71,6 +71,11 @@ jobs:
           mkdir -p "$RUNNER_TEMP/determinism"
           "$GODOT_BIN" --headless --path ./game -- --determinism-test "--capture-dir=$RUNNER_TEMP/determinism"
 
+      - name: Run Combat v2 tests (--combat-v2-test)
+        run: |
+          mkdir -p "$RUNNER_TEMP/combat-v2"
+          "$GODOT_BIN" --headless --path ./game -- --combat-v2-test "--capture-dir=$RUNNER_TEMP/combat-v2"
+
       - name: Upload validation reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -81,3 +86,6 @@ jobs:
             ${{ runner.temp }}/combat-proof/*.json
             ${{ runner.temp }}/khan-stage-test/*.json
             ${{ runner.temp }}/determinism/*.json
+            ${{ runner.temp }}/combat-v2/*.json
+            ${{ runner.temp }}/combat-v2/*.csv
+            ${{ runner.temp }}/combat-v2/*.md

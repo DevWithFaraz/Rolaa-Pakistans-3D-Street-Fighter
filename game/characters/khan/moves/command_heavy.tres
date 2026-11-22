@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_lh05y"]
+
+[resource]
+script = ExtResource("1_lh05y")
+id = "command_heavy"
+display_name = "Kaptaan Barrage (f+2)"
+animation_clip = &"QuadPunch"
+startup_ticks = 14
+active_ticks = 4
+recovery_ticks = 20
+damage = 20
+reach = 2.1
+box_low = 1.5
+box_height = 1.0
+knockback = 8.2
+hitstun_ticks = 27
+blockstun_ticks = 16
+hitstop_ticks = 8
+tracking = "homing"
+wall_splat = true
+advance_speed = 3.5
+contact_start_sec = 0.88
+contact_end_sec = 1.05
+clip_end_sec = 2.1

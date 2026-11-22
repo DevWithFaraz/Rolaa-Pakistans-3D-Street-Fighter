@@ -1,0 +1,92 @@
+{
+  "textures": {
+    "sunburst_core.png": 34627,
+    "magic_circle_outer.png": 68456,
+    "magic_rune_inner.png": 41532,
+    "vfx_smoke.png": 13254,
+    "fire_ring.png": 111146,
+    "ground_crack.png": 53680,
+    "impact_cut.png": 28397,
+    "impact_ring.png": 149312,
+    "lightning_core.png": 291638,
+    "ground_crack_veins.png": 202420,
+    "star_flare.png": 93525,
+    "slash_noise.png": 190812,
+    "voronoi_noise.png": 655242,
+    "fire_noise_flow.png": 726357
+  },
+  "lightning_bolts": {
+    "glb_bytes": 665648,
+    "meshes": 4,
+    "nodes": [
+      "BoltSky_2",
+      "BoltSky_0",
+      "BoltSky_1",
+      "BoltArc_0"
+    ],
+    "bolts": {
+      "BoltSky_0": {
+        "source_tris": 30605,
+        "final_tris": 9273,
+        "dimensions_m": [
+          4.032,
+          6.396,
+          11.495
+        ]
+      },
+      "BoltSky_1": {
+        "source_tris": 15904,
+        "final_tris": 5520,
+        "dimensions_m": [
+          2.892,
+          3.168,
+          11.495
+        ]
+      },
+      "BoltSky_2": {
+        "source_tris": 27576,
+        "final_tris": 5729,
+        "dimensions_m": [
+          3.955,
+          3.895,
+          11.481
+        ]
+      },
+      "BoltArc_0": {
+        "source_tris": 7200,
+        "final_tris": 1799,
+        "dimensions_m": [
+          3.8,
+          2.338,
+          8.312
+        ]
+      }
+    }
+  },
+  "slash_arcs": {
+    "glb_bytes": 21796,
+    "meshes": 2,
+    "nodes": [
+      "SlashWave",
+      "SlashCrescent"
+    ],
+    "arcs": {
+      "SlashWave": {
+        "tris": 288,
+        "dimensions_m": [
+          3.6,
+          3.555,
+          3.047
+        ]
+      },
+      "SlashCrescent": {
+        "tris": 192,
+        "dimensions_m": [
+          2.8,
+          2.8,
+          0.308
+        ]
+      }
+    }
+  }
+}

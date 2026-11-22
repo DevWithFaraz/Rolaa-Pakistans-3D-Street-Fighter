@@ -1,0 +1,32 @@
+{
+  "source_tris": 5260,
+  "final_tris": 946,
+  "dimensions_m": [
+    0.2532,
+    0.2338,
+    0.3406
+  ],
+  "glb_bytes": 711584,
+  "meshes": 1,
+  "images": 3,
+  "shards": {
+    "total_tris": 1044,
+    "per_shard_tris": {
+      "Shard_0": 174,
+      "Shard_1": 174,
+      "Shard_2": 174,
+      "Shard_3": 174,
+      "Shard_4": 174,
+      "Shard_5": 174
+    },
+    "nodes": [
+      "Shard_0",
+      "Shard_1",
+      "Shard_2",
+      "Shard_3",
+      "Shard_4",
+      "Shard_5"
+    ],
+    "glb_bytes": 875980
+  }
+}

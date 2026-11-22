@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_vprd2"]
+
+[resource]
+script = ExtResource("1_vprd2")
+id = "heavy_punch"
+display_name = "Right Cross (2)"
+animation_clip = &"CrossRight"
+startup_ticks = 13
+active_ticks = 4
+recovery_ticks = 25
+damage = 14
+reach = 1.95
+box_low = 1.75
+box_height = 0.9
+knockback = 4.2
+hitstun_ticks = 21
+blockstun_ticks = 14
+hitstop_ticks = 6
+advance_speed = 1.4
+cancel_routes = {
+"rk": "kick"
+}
+clip_start_sec = 0.32
+contact_start_sec = 0.72
+contact_end_sec = 0.86
+clip_end_sec = 1.35

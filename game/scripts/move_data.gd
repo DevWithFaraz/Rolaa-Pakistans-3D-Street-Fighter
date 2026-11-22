@@ -17,6 +17,16 @@ extends Resource
 @export var blockstun_ticks: int = 12
 @export var hitstop_ticks: int = 5
 @export var hit_level: String = "mid"
+@export var tracking: String = "linear"
+@export var launcher: bool = false
+@export var launch_velocity: Vector2 = Vector2(2.2, 8.8)
+@export var knockdown: bool = false
+@export var wall_splat: bool = false
+@export var armour_hits: int = 0
+@export var chip_damage: int = 0
+@export var advance_speed: float = 0.0
+@export var cancel_routes: Dictionary = {}
+@export var josh_cost: int = 0
 @export var clip_start_sec: float = 0.08
 @export var contact_start_sec: float = 0.56
 @export var contact_end_sec: float = 0.64
@@ -25,6 +35,14 @@ extends Resource
 
 func total_ticks() -> int:
 	return startup_ticks + active_ticks + recovery_ticks
+
+
+func on_hit_advantage() -> int:
+	return hitstun_ticks - recovery_ticks
+
+
+func on_block_advantage() -> int:
+	return blockstun_ticks - recovery_ticks
 
 
 func sample_clip_time(tick: int, clip_length: float = 0.0) -> float:
@@ -53,4 +71,15 @@ func to_legacy_dict() -> Dictionary:
 		"hitstop": hitstop_ticks,
 		"low": box_low,
 		"height": box_height,
+		"hit_level": hit_level,
+		"tracking": tracking,
+		"launcher": launcher,
+		"launch_velocity": launch_velocity,
+		"knockdown": knockdown,
+		"wall_splat": wall_splat,
+		"armour_hits": armour_hits,
+		"chip_damage": chip_damage,
+		"advance_speed": advance_speed,
+		"cancel_routes": cancel_routes.duplicate(),
+		"josh_cost": josh_cost,
 	}

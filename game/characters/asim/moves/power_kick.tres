@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_4s7go"]
+
+[resource]
+script = ExtResource("1_4s7go")
+id = "power_kick"
+display_name = "Commander Roundhouse (b+4)"
+animation_clip = &"RoundhouseKick"
+startup_ticks = 15
+active_ticks = 5
+recovery_ticks = 24
+damage = 22
+reach = 2.55
+box_low = 1.2
+box_height = 1.05
+knockback = 9.5
+hitstun_ticks = 29
+blockstun_ticks = 18
+hitstop_ticks = 9
+tracking = "homing"
+wall_splat = true
+contact_start_sec = 0.95
+contact_end_sec = 1.1
+clip_end_sec = 2.2

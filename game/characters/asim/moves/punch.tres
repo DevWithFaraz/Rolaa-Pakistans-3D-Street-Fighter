@@ -1,25 +1,17 @@
-[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="MoveData" format=3]
 
-[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_movedata"]
+[ext_resource type="Script" path="res://scripts/move_data.gd" id="1_tq675"]
 
 [resource]
-script = ExtResource("1_movedata")
-id = "punch"
-display_name = "Punch"
-animation_clip = &"Punch"
-startup_ticks = 6
-active_ticks = 3
-recovery_ticks = 14
-damage = 10
-reach = 1.8
-box_low = 1.95
-box_height = 0.8
-knockback = 4.5
-hitstun_ticks = 18
-blockstun_ticks = 12
-hitstop_ticks = 5
-hit_level = "mid"
-clip_start_sec = 0.08
-contact_start_sec = 0.52
-contact_end_sec = 0.62
-clip_end_sec = 1.28
+script = ExtResource("1_tq675")
+display_name = "Left Jab (1)"
+animation_clip = &"JabLeft"
+hit_level = "high"
+cancel_routes = {
+"lp": "light_combo",
+"rp": "heavy_punch"
+}
+clip_start_sec = 0.14
+contact_start_sec = 0.38
+contact_end_sec = 0.48
+clip_end_sec = 0.88

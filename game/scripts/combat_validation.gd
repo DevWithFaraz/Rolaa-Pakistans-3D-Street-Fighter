@@ -97,7 +97,7 @@ func run(game: Node) -> void:
 	await tap("p1_jump")
 	await g._tick(6)
 	await tap("p1_punch")
-	check(g.fighters[0].state != "attack", "Ground attacks cannot start while airborne")
+	check(g.fighters[0].state == "attack" and g.fighters[0].attack_kind == "air_punch", "Airborne punch triggers aerial air_punch instead of ground punch")
 	await setup()
 	await tap("p1_kick")
 	await g._tick(3)
