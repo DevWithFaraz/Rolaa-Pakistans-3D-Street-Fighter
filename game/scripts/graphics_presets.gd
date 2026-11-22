@@ -41,7 +41,8 @@ static func apply(stage: Node, preset_name: String) -> String:
 	elif preset == "medium":
 		if sun != null:
 			sun.shadow_enabled = true
-			sun.directional_shadow_max_distance = 38.0
+			sun.directional_shadow_mode = DirectionalLight3D.SHADOW_PARALLEL_2_SPLITS
+			sun.directional_shadow_max_distance = 32.0
 		if vp != null:
 			vp.msaa_3d = Viewport.MSAA_2X
 		if env != null:
@@ -57,7 +58,8 @@ static func apply(stage: Node, preset_name: String) -> String:
 	else:  # "high"
 		if sun != null:
 			sun.shadow_enabled = true
-			sun.directional_shadow_max_distance = 45.0
+			sun.directional_shadow_mode = DirectionalLight3D.SHADOW_PARALLEL_2_SPLITS
+			sun.directional_shadow_max_distance = 40.0
 		if vp != null:
 			vp.msaa_3d = Viewport.MSAA_4X
 		if env != null:

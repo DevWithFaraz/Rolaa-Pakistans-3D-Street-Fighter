@@ -57,6 +57,7 @@ var _prev_actions: Dictionary = {}
 var _prev_junoon: Array[bool] = [false, false]
 var _prev_attack_kind: Array[String] = ["", ""]
 var _prev_states: Array[String] = ["", ""]
+var _last_sky_dim := -1.0
 var feedback: Node3D
 var asim_demo = AsimDemoScript.new()
 
@@ -64,6 +65,10 @@ func _ready() -> void:
 	var user_args := OS.get_cmdline_user_args()
 	legacy_testing = "--self-test" in user_args or "--combat-test" in user_args or "--khan-stage-test" in user_args or "--perf-bench" in user_args or "--determinism-test" in user_args
 	testing = legacy_testing or "--combat-v2-test" in user_args
+	if DisplayServer.get_name() != "headless" and not ("--perf-bench" in user_args):
+		# Intel Iris Xe OpenGL VSync halves 60 Hz to ~30 fps even when frames render in 5 ms; DWM already composites windowed tear-free.
+		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
+		Engine.max_fps = 60
 	dummy_mode = "stand" if testing else "tekken_auto"
 	var use_proxies := "--proxy-fighters" in user_args
 	_bind_inputs()
@@ -238,7 +243,8 @@ func _make_environment() -> void:
 	sun.light_color = Color("fff0db")
 	sun.light_energy = 0.8
 	sun.shadow_enabled = true
-	sun.directional_shadow_max_distance = 38.0
+	sun.directional_shadow_mode = DirectionalLight3D.SHADOW_PARALLEL_2_SPLITS
+	sun.directional_shadow_max_distance = 32.0
 	add_child(sun)
 
 func reset() -> void:
@@ -616,6 +622,9 @@ func _apply_super_environment() -> void:
 	if feedback == null:
 		return
 	var dim := clampf(float(feedback.get("sky_dim_factor")), 0.0, 1.0)
+	if is_equal_approx(dim, _last_sky_dim):
+		return
+	_last_sky_dim = dim
 	if is_instance_valid(world_env) and world_env.environment != null:
 		world_env.environment.ambient_light_energy = lerpf(0.65, 0.24, dim)
 	if is_instance_valid(sun):
@@ -1037,6 +1046,7 @@ func restore_match(snap: Dictionary) -> void:
 	camera.h_offset = 0.0
 	camera.v_offset = 0.0
 	feedback.clear()
+	_last_sky_dim = -1.0
 	_apply_super_environment()
 	feedback.set_rock_visual(rock_proj)
 	feedback.set_bullet_visual(bullet_proj)

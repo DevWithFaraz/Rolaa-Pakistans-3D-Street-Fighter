@@ -44,6 +44,7 @@ func _drive_choreography(frame: int, g: Node) -> void:
 
 
 func run(g: Node, out_path: String, capture_path: String = "") -> void:
+	Engine.max_fps = 0
 	var preset := "medium"
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--preset="):
